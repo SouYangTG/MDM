@@ -126,6 +126,10 @@
       <relatedItems xmi:id="_Bz6IgPNjEeeYF8S2gRjjkw" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Bz6IgfNjEeeYF8S2gRjjkw" id="_YL4dQAEkEeSoqvm5NVIptg - CountryOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_Bz6IgvNjEeeYF8S2gRjjkw" id="_q6hJ0AEoEeSoqvm5NVIptg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_PW6gwPNrEeeumaGf2NvNUA" id="_YqZTwPNqEeeumaGf2NvNUA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PW6gwfNrEeeumaGf2NvNUA" id="_ceTfsPNpEeeumaGf2NvNUA" version="Latest" type="context"/>
+      <relatedItems xmi:id="_PW6gwvNrEeeumaGf2NvNUA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PW6gw_NrEeeumaGf2NvNUA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Bz6Ig_NjEeeYF8S2gRjjkw">
       <baseItem xmi:id="_Bz6IhPNjEeeYF8S2gRjjkw" id="_PxLfAoexEeSuyN9SETMU9Q" version="0.1" type="job"/>
