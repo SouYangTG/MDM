@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmmetadata:MDMServerDef xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmmetadata="http://www.talend.org/metadata/mdmserverdef" xmi:id="_oQw8wPNLEeeuAbPAP0Qr6w" name="server01MDM" label="" host="server01" passwd="ujQfjOu3mq4=" path="/talendmdm/" url="http://server01:8180/talendmdm/" user="user" algorithm="CommonV2"/>
+<mdmmetadata:MDMServerDef xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmmetadata="http://www.talend.org/metadata/mdmserverdef" xmi:id="_oQw8wPNLEeeuAbPAP0Qr6w" name="server01MDM" label="" host="server01" passwd="ujQfjOu3mq4=" path="/talendmdm" url="http://server01:8180/talendmdm" user="user" algorithm="CommonV2"/>
