@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_N5ldgfGyEee0jJGYwaZM0A" name="Browse_items_Country" description="[EN:Country]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_3WW4UPNKEeeuAbPAP0Qr6w" name="Browse_items_Country" description="[EN:Country]" transformerPK="">
   <searchableBusinessElements>Country/ISO_NumericCode</searchableBusinessElements>
   <searchableBusinessElements>Country/ISO_Alpha-2</searchableBusinessElements>
   <searchableBusinessElements>Country/ISO_Alpha-3</searchableBusinessElements>
@@ -8,5 +8,5 @@
   <viewableBusinessElements>Country/ISO_Alpha-2</viewableBusinessElements>
   <viewableBusinessElements>Country/ISO_Alpha-3</viewableBusinessElements>
   <viewableBusinessElements>Country/Name</viewableBusinessElements>
-  <isTransformerActive xmi:id="_N5ldgvGyEee0jJGYwaZM0A"/>
+  <isTransformerActive xmi:id="_3WW4UfNKEeeuAbPAP0Qr6w"/>
 </mdmserverobject:WSViewE>
