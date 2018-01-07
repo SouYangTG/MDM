@@ -352,8 +352,8 @@
     <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
     <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
     <elementParameter field="TEXT" name="MDMURL" value="&quot;http://localhost:8180/talendmdm/services/soap&quot;"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;user&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="fwdWwRH4B1Y="/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
     <elementParameter field="TEXT" name="DATAMODEL" value="&quot;Customer&quot;"/>
     <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;Customer&quot;"/>
     <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
