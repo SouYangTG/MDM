@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_kTh6kPcOEeew_6QPwNiNiQ" name="Agencies" dataPackage="_kTh6kfcOEeew_6QPwNiNiQ" Server="Localhost 127.0.0.1" FilePath="D:/MDM/Advance/MDM_Advanced/Lab_Files/Agencies.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_kTh6kfcOEeew_6QPwNiNiQ" name="default" dataManager="_kTh6kPcOEeew_6QPwNiNiQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_kTh6kvcOEeew_6QPwNiNiQ" id="_K-h2oPcNEeew_6QPwNiNiQ" label="Agencies">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kTh6k_cOEeew_6QPwNiNiQ" label="ID" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kTh6lPcOEeew_6QPwNiNiQ" label="NAME" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kTh6lfcOEeew_6QPwNiNiQ" label="POSTALCODE" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kTh6lvcOEeew_6QPwNiNiQ" label="CITY" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kTh6l_cOEeew_6QPwNiNiQ" label="STATE" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_kTh6mPcOEeew_6QPwNiNiQ" label="REGION" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
