@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_cfNeoPNpEeeumaGf2NvNUA" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_cfNeofNpEeeumaGf2NvNUA" comment="" name="MySQL_MDM_Port" prompt="MySQL_MDM_Port?" promptNeeded="false" type="id_String" value="3306"/>
-  <contextParameter xmi:id="_cfNeovNpEeeumaGf2NvNUA" comment="" name="MySQL_MDM_AdditionalParams" prompt="MySQL_MDM_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
-  <contextParameter xmi:id="_cfNeo_NpEeeumaGf2NvNUA" comment="" name="MySQL_MDM_Login" prompt="MySQL_MDM_Login?" promptNeeded="false" type="id_String" value="root"/>
-  <contextParameter xmi:id="_cfNepPNpEeeumaGf2NvNUA" comment="" name="MySQL_MDM_Database" prompt="MySQL_MDM_Database?" promptNeeded="false" type="id_String" value="mdm"/>
-  <contextParameter xmi:id="_cfNepfNpEeeumaGf2NvNUA" comment="" name="MySQL_MDM_Password" prompt="MySQL_MDM_Password?" promptNeeded="false" type="id_Password" value="PrT+NDdqPMAoh7oNnQi9mA=="/>
-  <contextParameter xmi:id="_cfNepvNpEeeumaGf2NvNUA" comment="" name="MySQL_MDM_Server" prompt="MySQL_MDM_Server?" promptNeeded="false" type="id_String" value="localhost"/>
-</talendfile:ContextType>
