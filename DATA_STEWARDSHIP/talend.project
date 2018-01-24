@@ -102,6 +102,8 @@
       <relatedItems xmi:id="_l9YRDgFFEeiMNOrAWR0DQA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_l9YRDwFFEeiMNOrAWR0DQA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_l9YREAFFEeiMNOrAWR0DQA" id="_0jf5QAEHEeSoqvm5NVIptg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_CIl3oAFIEeiMNOrAWR0DQA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_CIl3oQFIEeiMNOrAWR0DQA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_l9YREQFFEeiMNOrAWR0DQA">
       <baseItem xmi:id="_l9YREgFFEeiMNOrAWR0DQA" id="_PxLfAYexEeSuyN9SETMU9Q" version="0.1" type="job"/>
