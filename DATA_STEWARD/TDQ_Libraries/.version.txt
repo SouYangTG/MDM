@@ -1,2 +1,0 @@
-#Wed Jan 24 11:51:48 CST 2018
-version=6.4.1
