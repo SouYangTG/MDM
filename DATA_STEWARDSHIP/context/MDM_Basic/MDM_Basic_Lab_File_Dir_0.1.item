@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_GBQxIAEuEeiJub6ycdsOMg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_GBQxIQEuEeiJub6ycdsOMg" comment="" name="MDM_Basic_Dir" prompt="MDM_Basic_Dir?" promptNeeded="false" type="id_String" value="/root/Downloads/MDM_Basic/Lab_Files/"/>
+</talendfile:ContextType>
