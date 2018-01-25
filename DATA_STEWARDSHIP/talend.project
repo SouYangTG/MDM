@@ -150,6 +150,8 @@
       <relatedItems xmi:id="_CFt-PwIWEeiFwbMXZeLd-A" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_CFt-QAIWEeiFwbMXZeLd-A" id="_YL4dQAEkEeSoqvm5NVIptg - CountryOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_CFt-QQIWEeiFwbMXZeLd-A" id="_q6hJ0AEoEeSoqvm5NVIptg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_lTAyYAIWEeiFwbMXZeLd-A" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_lTAyYQIWEeiFwbMXZeLd-A" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_8EisgAExEeiMNOrAWR0DQA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_8EisgQExEeiMNOrAWR0DQA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
