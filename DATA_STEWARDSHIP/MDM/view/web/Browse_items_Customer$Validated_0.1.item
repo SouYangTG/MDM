@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_BxXSAVJQEeWWNc6pwAa_RQ" name="Browse_items_Customer" description="[EN:Customer]" timestamp="1463056455494" digestValue="24691dbdaa409d2773d2d34a001778ce" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_BxXSAVJQEeWWNc6pwAa_RQ" name="Browse_items_Customer#Validated" description="[EN:Customer (Validated)]" timestamp="1463058102924" digestValue="62dfcef0ba16054a2d3f6448f782068e" transformerPK="">
   <searchableBusinessElements>Customer/FirstName</searchableBusinessElements>
   <searchableBusinessElements>Customer/LastName</searchableBusinessElements>
   <searchableBusinessElements>Customer/DateOfBirth</searchableBusinessElements>
@@ -11,5 +11,9 @@
   <viewableBusinessElements>Customer/FirstName</viewableBusinessElements>
   <viewableBusinessElements>Customer/LastName</viewableBusinessElements>
   <viewableBusinessElements>Customer/DateOfBirth</viewableBusinessElements>
-  <isTransformerActive xmi:id="_SR19wBg9EeabMK9LHVDuTg"/>
+  <whereConditions xmi:id="_XWy-ABhAEeabMK9LHVDuTg" leftPath="Customer/Status" rightValueOrPath="Validated">
+    <stringPredicate xmi:id="_XWy-ARhAEeabMK9LHVDuTg" value="NONE"/>
+    <operator xmi:id="_XWy-AhhAEeabMK9LHVDuTg" value="EQUALS"/>
+  </whereConditions>
+  <isTransformerActive xmi:id="_XWy-AxhAEeabMK9LHVDuTg"/>
 </mdmserverobject:WSViewE>
