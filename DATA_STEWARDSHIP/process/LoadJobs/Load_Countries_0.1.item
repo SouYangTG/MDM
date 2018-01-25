@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="MDM_server01_MDM_Username" prompt="MDM_server01_MDM_Username?" promptNeeded="false" repositoryContextId="_I0XNAAIBEeiFwbMXZeLd-A" type="id_String" value="administrator"/>
+    <contextParameter comment="" name="MDM_server01_MDM_Password" prompt="MDM_server01_MDM_Password?" promptNeeded="false" repositoryContextId="_I0XNAAIBEeiFwbMXZeLd-A" type="id_Password" value="gYS5jltDdzLSfHIqaDxbXg=="/>
+    <contextParameter comment="" name="MDM_server01_MDM_URL" prompt="MDM_server01_MDM_URL?" promptNeeded="false" repositoryContextId="_I0XNAAIBEeiFwbMXZeLd-A" type="id_String" value="http://server01:8180/talendmdm/services/soap"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -332,6 +336,8 @@
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JgWwUAIBEeiFwbMXZeLd-A" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_YL4dQAEkEeSoqvm5NVIptg - CountryOut" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
@@ -343,11 +349,11 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
     <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
-    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://localhost:8180/talendmdm/services/soap&quot;"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
-    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;Customer&quot;"/>
-    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;Customer&quot;"/>
+    <elementParameter field="TEXT" name="MDMURL" value="context.MDM_server01_MDM_URL"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.MDM_server01_MDM_Username"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueV47w358oLQCWtGiqaJmlgpYsud8wm50ceawgLPQOVmQ=="/>
+    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;crossreferencing&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;crossreferencing&quot;"/>
     <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
     <elementParameter field="TABLE" name="RETURN_IDS" show="false"/>
     <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
