@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:MDMConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_JgXXYAIBEeiFwbMXZeLd-A" name="MDM_server01" label="MDM_server01" version="s60" ContextMode="true" ContextId="_I0XNAAIBEeiFwbMXZeLd-A" contextName="Default" Username="context.MDM_server01_MDM_Username" Password="context.MDM_server01_MDM_Password" Datamodel="crossreferencing" Datacluster="crossreferencing" serverUrl="context.MDM_server01_MDM_URL"/>
