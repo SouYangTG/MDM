@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_BzUZ0VJQEeWWNc6pwAa_RQ" name="Browse_items_Country" description="[EN:Country]" timestamp="1516824000434" digestValue="2d8bf70403bf0218ebc532c0b9987afe" lastServerName="server01" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_BzUZ0VJQEeWWNc6pwAa_RQ" name="Browse_items_Country" description="[EN:Country]" timestamp="1516907312514" digestValue="2d8bf70403bf0218ebc532c0b9987afe" lastServerName="server01" transformerPK="">
   <searchableBusinessElements>Country/ISO_NumericCode</searchableBusinessElements>
   <searchableBusinessElements>Country/ISO_Alpha-2</searchableBusinessElements>
   <searchableBusinessElements>Country/ISO_Alpha-3</searchableBusinessElements>
