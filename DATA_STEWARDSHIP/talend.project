@@ -145,6 +145,9 @@
       <relatedItems xmi:id="_uYWe7gIZEeiFwbMXZeLd-A" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_uYWe7wIZEeiFwbMXZeLd-A" id="_YL4dQAEkEeSoqvm5NVIptg - CustomerOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_uYWe8AIZEeiFwbMXZeLd-A" id="_YL4dQAEkEeSoqvm5NVIptg - AddressOut" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_w1aXMAIZEeiFwbMXZeLd-A" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_w1aXMQIZEeiFwbMXZeLd-A" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_w1aXMgIZEeiFwbMXZeLd-A" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_8EisgAExEeiMNOrAWR0DQA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_8EisgQExEeiMNOrAWR0DQA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
