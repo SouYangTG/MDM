@@ -3,7 +3,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="MySQL_server01_Server" prompt="MySQL_server01_Server?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_String" value="server01"/>
     <contextParameter comment="" name="MySQL_server01_Login" prompt="MySQL_server01_Login?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_String" value="root"/>
-    <contextParameter comment="" name="MySQL_server01_Database" prompt="MySQL_server01_Database?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_String" value=""/>
+    <contextParameter comment="" name="MySQL_server01_Database" prompt="MySQL_server01_Database?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_String" value="mdm"/>
     <contextParameter comment="" name="MySQL_server01_Port" prompt="MySQL_server01_Port?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_String" value="3306"/>
     <contextParameter comment="" name="MySQL_server01_Password" prompt="MySQL_server01_Password?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_Password" value="1QY6ZyNqCD4BAhKeqSkILQ=="/>
     <contextParameter comment="" name="MySQL_server01_AdditionalParams" prompt="MySQL_server01_AdditionalParams?" promptNeeded="false" repositoryContextId="_nH9CMAFPEeiFwbMXZeLd-A" type="id_String" value="noDatetimeStringSync=true"/>
