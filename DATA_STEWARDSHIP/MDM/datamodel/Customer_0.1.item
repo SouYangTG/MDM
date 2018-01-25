@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSDataModelE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_CGfRwFDBEeWISfP50pX3PA" name="Customer" description="" timestamp="1516907311030" digestValue="d2f448cbe960d8a42c2267a1f49eb39c" lastServerName="server01"/>
+<mdmserverobject:WSDataModelE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_CGfRwFDBEeWISfP50pX3PA" name="Customer" description="" timestamp="1463045410858" digestValue="f85789ab2961bbb9120557ae62d3a13a"/>
