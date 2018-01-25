@@ -728,7 +728,7 @@
       <outputTrees name="to_MDM">
         <nodes name="MDM_Customer" expression="" type="id_Document" xpath="to_MDM/MDM_Customer" pattern="" nullable="false">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustomerId" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/CustomerId"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustomerId" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_String" xpath="to_MDM.MDM_Customer:/Customer/CustomerId"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="FirstName" expression="row7.first_name" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.0" xpath="to_MDM.MDM_Customer:/Customer/FirstName"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastName" expression="row7.last_name" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.1" xpath="to_MDM.MDM_Customer:/Customer/LastName"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="DateOfBirth" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row7.dob)  " type="id_Date" incomingConnections="//@node.13/@nodeData/@connections.2" xpath="to_MDM.MDM_Customer:/Customer/DateOfBirth" pattern="&quot;dd-MM-yyyy&quot;" optional="true"/>
