@@ -128,7 +128,6 @@
       <relatedItems xmi:id="_6sHOAAICEeiFwbMXZeLd-A" id="DataMasking" version="Latest" type="routine"/>
       <relatedItems xmi:id="_6sH1EAICEeiFwbMXZeLd-A" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-P1MYAICEeiFwbMXZeLd-A" id="_I0XNAAIBEeiFwbMXZeLd-A" version="Latest" type="context"/>
-      <relatedItems xmi:id="_-P1MYQICEeiFwbMXZeLd-A" id="_JgWwUAIBEeiFwbMXZeLd-A" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_l9YRIwFFEeiMNOrAWR0DQA">
       <baseItem xmi:id="_l9YRJAFFEeiMNOrAWR0DQA" id="_PxLfAoexEeSuyN9SETMU9Q" version="0.1" type="job"/>
