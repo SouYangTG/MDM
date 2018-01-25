@@ -300,7 +300,7 @@
     <elementParameter field="LABEL" name="NOTE2" value="suggest to use 6.0 url" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_1" show="false"/>
-    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://localhost:8180/talendmdm/services/soap&quot;"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://server01:8180/talendmdm/services/soap&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
     <elementParameter field="TEXT" name="CONCEPT" value="&quot;Country&quot;"/>
