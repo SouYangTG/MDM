@@ -796,8 +796,6 @@
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_2" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_JgWwUAIBEeiFwbMXZeLd-A" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_YL4dQAEkEeSoqvm5NVIptg - CustomerOut" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
@@ -812,8 +810,8 @@
     <elementParameter field="TEXT" name="MDMURL" value="context.MDM_server01_MDM_URL" show="false"/>
     <elementParameter field="TEXT" name="USERNAME" value="context.MDM_server01_MDM_Username" show="false"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="8pW6Nmy2kueV47w358oLQCWtGiqaJmlgpYsud8wm50ceawgLPQOVmQ==" show="false"/>
-    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;crossreferencing&quot;"/>
-    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;crossreferencing&quot;"/>
+    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;customer&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;customer&quot;"/>
     <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
     <elementParameter field="TABLE" name="RETURN_IDS" show="false"/>
     <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
