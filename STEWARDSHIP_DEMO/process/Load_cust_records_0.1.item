@@ -236,7 +236,7 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata label="staging_customer" name="staging_customer">
+    <metadata connector="FLOW" label="staging_customer" name="staging_customer">
       <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
@@ -276,6 +276,116 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
     </nodeData>
   </node>
+  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_1rbwEALLEeiq4ca-xXg-UQ - Customer_IMOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_1rbwEALLEeiq4ca-xXg-UQ - Customer_IMOut" show="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="customer"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="customer" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
+    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://server01:8180/talendmdm/services/soap&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
+    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;Cust_IM&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;Cust_IM&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
+    <elementParameter field="TABLE" name="RETURN_IDS"/>
+    <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
+    <elementParameter field="CHECK" name="WITHREPORT" value="false"/>
+    <elementParameter field="TEXT" name="SOURCE" value="&quot;TOS&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ISINVOKE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADD_TASKID" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
+    <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="customer" show="false"/>
+    <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
+    <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PARTIAL_DELETE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="POSITION" value="" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="false"/>
+    <elementParameter field="TEXT" name="COMMIT_LEVEL" value="200" show="false"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/Customer_IM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/firstName"/>
+      <elementValue elementRef="COLUMN" value="firstName"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/lastName"/>
+      <elementValue elementRef="COLUMN" value="lastName"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/street"/>
+      <elementValue elementRef="COLUMN" value="street"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/zip"/>
+      <elementValue elementRef="COLUMN" value="zip"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/city"/>
+      <elementValue elementRef="COLUMN" value="city"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/country"/>
+      <elementValue elementRef="COLUMN" value="country"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="8"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/Customer_IM/Customer_IMId"/>
+      <elementValue elementRef="COLUMN" value="Customer_IMId"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer_IMOut"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="staging_customer" name="tMDMOutput_1">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT" label="staging_customer" name="OUTPUT">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="staging_customer" name="REJECT">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="Cust_records" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tGenKey_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Cust_records" show="false"/>
@@ -283,6 +393,10 @@
   <connection connectorName="FLOW" label="blocked_cust" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tXMLMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="blocked_cust" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="staging_customer" lineStyle="0" metaname="staging_customer" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMDMOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="staging_customer" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
