@@ -725,10 +725,10 @@
         <nodes name="email" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.5" xpath="row7/email"/>
         <nodes name="MDM_Address_Id" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.3" xpath="row7/MDM_Address_Id"/>
       </inputTrees>
-      <outputTrees name="to_MDM">
+      <outputTrees name="to_MDM" multiLoops="true">
         <nodes name="MDM_Customer" expression="" type="id_Document" xpath="to_MDM/MDM_Customer" pattern="" nullable="false">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustomerId" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/CustomerId"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustomerId" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/CustomerId" loop="true" main="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="FirstName" expression="row7.first_name" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.0" xpath="to_MDM.MDM_Customer:/Customer/FirstName"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastName" expression="row7.last_name" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.1" xpath="to_MDM.MDM_Customer:/Customer/LastName"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="DateOfBirth" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row7.dob)  " type="id_Date" incomingConnections="//@node.13/@nodeData/@connections.2" xpath="to_MDM.MDM_Customer:/Customer/DateOfBirth" pattern="&quot;dd-MM-yyyy&quot;" optional="true"/>
@@ -767,6 +767,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" value="true" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
