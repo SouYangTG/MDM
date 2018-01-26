@@ -25,7 +25,7 @@
     <resultMetadata xmi:id="_9Tr76QLAEeiq4ca-xXg-UQ"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_9Tsi8ALAEeiq4ca-xXg-UQ"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_9Tsi8QLAEeiq4ca-xXg-UQ">
-      <builtInMatchRuleDefinition xmi:id="_9Tsi8gLAEeiq4ca-xXg-UQ" recordLinkageAlgorithm="T_SwooshAlgorithm">
+      <builtInMatchRuleDefinition xmi:id="_9Tsi8gLAEeiq4ca-xXg-UQ" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
         <blockKeys xmi:id="_d_fDsALBEeiq4ca-xXg-UQ" name="LastName" column="lastName">
           <preAlgorithm xmi:id="_d_fDsQLBEeiq4ca-xXg-UQ" algorithmType="NON_ALGO" algorithmParameters=""/>
           <algorithm xmi:id="_d_fDsgLBEeiq4ca-xXg-UQ" algorithmType="first_N_Char" algorithmParameters="1"/>
