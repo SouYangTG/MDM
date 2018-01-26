@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_ciYsMALEEeiq4ca-xXg-UQ" name="Cust_match_IM" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
+  <taggedValue xmi:id="_ciYsMQLEEeiq4ca-xXg-UQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_ciYsMgLEEeiq4ca-xXg-UQ" tag="Author" value="security@company.com"/>
+  <taggedValue xmi:id="_ciYsMwLEEeiq4ca-xXg-UQ" tag="Purpose"/>
+  <taggedValue xmi:id="_ciYsNALEEeiq4ca-xXg-UQ" tag="Description"/>
+  <taggedValue xmi:id="_ciYsNQLEEeiq4ca-xXg-UQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_ciYsNgLEEeiq4ca-xXg-UQ" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_ciYsNwLEEeiq4ca-xXg-UQ" name="LastName" column="lastName">
+    <preAlgorithm xmi:id="_ciYsOALEEeiq4ca-xXg-UQ" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_ciYsOQLEEeiq4ca-xXg-UQ" algorithmType="first_N_Char" algorithmParameters="1"/>
+    <postAlgorithm xmi:id="_ciYsOgLEEeiq4ca-xXg-UQ" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <matchRules xmi:id="_ciYsOwLEEeiq4ca-xXg-UQ" name="Match Rule 1">
+    <matchKeys xmi:id="_ciYsPALEEeiq4ca-xXg-UQ" name="FirstName" column="firstName" confidenceWeight="3" handleNull="nullMatchNull" threshold="0.9" tokenizationType="No">
+      <algorithm xmi:id="_ciYsPQLEEeiq4ca-xXg-UQ" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+    <matchKeys xmi:id="_ciYsPgLEEeiq4ca-xXg-UQ" name="LastName" column="lastName" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
+      <algorithm xmi:id="_ciYsPwLEEeiq4ca-xXg-UQ" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+  <survivorshipKeys xmi:id="_ciYsQALEEeiq4ca-xXg-UQ" name="FirstName" column="firstName" allowManualResolution="true">
+    <function xmi:id="_ciYsQQLEEeiq4ca-xXg-UQ" algorithmType="Concatenate" algorithmParameters=","/>
+  </survivorshipKeys>
+  <survivorshipKeys xmi:id="_ciYsQgLEEeiq4ca-xXg-UQ" name="LastName" column="lastName" allowManualResolution="true">
+    <function xmi:id="_ciYsQwLEEeiq4ca-xXg-UQ" algorithmType="Concatenate" algorithmParameters=","/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
