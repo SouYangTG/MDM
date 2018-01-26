@@ -35,7 +35,7 @@
           <matchKeys xmi:id="_OYKUEALCEeiq4ca-xXg-UQ" name="FirstName" column="firstName" confidenceWeight="3" handleNull="nullMatchNull" threshold="0.9" tokenizationType="No">
             <algorithm xmi:id="_OYKUEQLCEeiq4ca-xXg-UQ" algorithmType="JARO_WINKLER" algorithmParameters=""/>
           </matchKeys>
-          <matchKeys xmi:id="_c1JiEALCEeiq4ca-xXg-UQ" name="LastName" column="lastName" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+          <matchKeys xmi:id="_c1JiEALCEeiq4ca-xXg-UQ" name="LastName" column="lastName" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
             <algorithm xmi:id="_c1JiEQLCEeiq4ca-xXg-UQ" algorithmType="JARO_WINKLER" algorithmParameters=""/>
           </matchKeys>
         </matchRules>
