@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_9Tr74ALAEeiq4ca-xXg-UQ" name="Customer_IM" creationDate="2018-01-26T11:47:20.026-0600">
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_9Tr74ALAEeiq4ca-xXg-UQ" name="Customer_IM" creationDate="2018-01-26T11:47:20.026-0600" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_9mLaEALAEeiq4ca-xXg-UQ"/>
   <taggedValue xmi:id="_9Tr74QLAEeiq4ca-xXg-UQ" tag="PREVIEW_ROW_NUMBER" value="10000"/>
   <taggedValue xmi:id="_9Tr74gLAEeiq4ca-xXg-UQ" tag="Status" value="development"/>
   <taggedValue xmi:id="_9Tr74wLAEeiq4ca-xXg-UQ" tag="Author" value="security@company.com"/>
-  <taggedValue xmi:id="_9Tr75ALAEeiq4ca-xXg-UQ" tag="Purpose"/>
-  <taggedValue xmi:id="_9Tr75QLAEeiq4ca-xXg-UQ" tag="Description"/>
+  <taggedValue xmi:id="_9Tr75ALAEeiq4ca-xXg-UQ" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_9Tr75QLAEeiq4ca-xXg-UQ" tag="Description" value=""/>
   <taggedValue xmi:id="_9Tr75gLAEeiq4ca-xXg-UQ" tag="Version" value="0.1"/>
-  <context xmi:id="_9Tr75wLAEeiq4ca-xXg-UQ"/>
+  <taggedValue xmi:id="_9iWC8ALAEeiq4ca-xXg-UQ" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_9iWC8QLAEeiq4ca-xXg-UQ" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_9iWC8gLAEeiq4ca-xXg-UQ" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_9mIWwQLAEeiq4ca-xXg-UQ" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_9Tr75wLAEeiq4ca-xXg-UQ">
+    <connection href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKPzoAK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLsgK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLswK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLtAK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLtQK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLtgK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLtwK7Eeiq4ca-xXg-UQ"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Customer_records_IM_0.1.item#_NKaLuAK7Eeiq4ca-xXg-UQ"/>
+  </context>
   <results xmi:id="_9Tr76ALAEeiq4ca-xXg-UQ">
     <resultMetadata xmi:id="_9Tr76QLAEeiq4ca-xXg-UQ"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_9Tsi8ALAEeiq4ca-xXg-UQ"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_9Tsi8QLAEeiq4ca-xXg-UQ">
-      <builtInMatchRuleDefinition xmi:id="_9Tsi8gLAEeiq4ca-xXg-UQ"/>
+      <builtInMatchRuleDefinition xmi:id="_9Tsi8gLAEeiq4ca-xXg-UQ">
+        <matchRules xmi:id="_9duosALAEeiq4ca-xXg-UQ" name="Match Rule 1"/>
+      </builtInMatchRuleDefinition>
     </indicators>
   </results>
   <parameters xmi:id="_9Tsi8wLAEeiq4ca-xXg-UQ" analysisType="Match Analysis"/>
+  <contextType xmi:id="_9mIWwALAEeiq4ca-xXg-UQ" confirmationNeeded="false" name="Default"/>
 </dataquality.analysis:Analysis>
