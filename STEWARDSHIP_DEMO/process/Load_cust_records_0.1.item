@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -206,7 +206,15 @@
   <node componentName="tGenKey" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGenKey_1" show="false"/>
     <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
-    <elementParameter field="TABLE" name="ALGO"/>
+    <elementParameter field="TABLE" name="ALGO">
+      <elementValue elementRef="PRECOLUMN" value="lastName"/>
+      <elementValue elementRef="PRE_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="PRE_VALUE" value=""/>
+      <elementValue elementRef="KEY_ALGO" value="first_N_Char"/>
+      <elementValue elementRef="KEY_VALUE" value="1"/>
+      <elementValue elementRef="POST_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="POST_VALUE" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="SHOW_HELP_KEY" value="false"/>
     <elementParameter field="LABEL" name="HELP_KEY" value="Notice that how to fill algorithm parameter:&#xA;(1) N first characters of each word: fill in a digit number, like 2 or 12, etc.&#xA;(2) first N characters of the string: fill in a digit number&#xA;(3) last N characters of the string: fill in a digit number&#xA;(4) first N consonants of the string: fill in a digit number&#xA;(5) first N vowels of the string: fill in a digit number&#xA;(6) substring(a, b): fill a String like &quot;2;4&quot;, for example, &quot;abcdef&quot; returns &quot;cd&quot; on impact&#xA;(7) pick characters: fill a String like &quot;1;2-4;5&quot;, for example, &quot;abcdef&quot; returns &quot;bcdf&quot; on impact&#xA;(8) use default value: any String you want.(it is to replace empty value after key algorithm)&#xA;(9) add left position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;(10) add right position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;" show="false"/>
     <elementParameter field="CHECK" name="IS_SHADOW_JOB" value="false" show="false"/>
@@ -219,12 +227,62 @@
       <column comment="" key="false" length="5" name="zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="11" name="city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata label="staging_customer" name="staging_customer">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="blocked_cust" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="id" type="id_String" xpath="blocked_cust/id"/>
+        <nodes name="firstName" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="blocked_cust/firstName"/>
+        <nodes name="lastName" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="blocked_cust/lastName"/>
+        <nodes name="street" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="blocked_cust/street"/>
+        <nodes name="zip" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="blocked_cust/zip"/>
+        <nodes name="city" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="blocked_cust/city"/>
+        <nodes name="country" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="blocked_cust/country"/>
+        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="blocked_cust/T_GEN_KEY"/>
+      </inputTrees>
+      <outputTrees name="staging_customer">
+        <nodes name="customer" expression="" type="id_Document" xpath="staging_customer/customer" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer_IM" expression="" type="id_String" xpath="staging_customer.customer:/Customer_IM">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata" type="id_String" xpath="staging_customer.customer:/Customer_IM/xmlns:metadata" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer_IMId" type="id_String" xpath="staging_customer.customer:/Customer_IM/Customer_IMId" loop="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstName" expression="blocked_cust.firstName" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="staging_customer.customer:/Customer_IM/firstName" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastName" expression="blocked_cust.lastName" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="staging_customer.customer:/Customer_IM/lastName" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="street" expression="blocked_cust.street" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="staging_customer.customer:/Customer_IM/street" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="zip" expression="blocked_cust.zip" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="staging_customer.customer:/Customer_IM/zip" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="city" expression="blocked_cust.city" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="staging_customer.customer:/Customer_IM/city" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="country" expression="blocked_cust.country" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="staging_customer.customer:/Customer_IM/country" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="&quot;Cust-db&quot;" type="id_String" xpath="staging_customer.customer:/Customer_IM/metadata:staging_blockkey"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="blocked_cust.T_GEN_KEY" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="staging_customer.customer:/Customer_IM/metadata:staging_blockkey"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
+    </nodeData>
   </node>
   <connection connectorName="FLOW" label="Cust_records" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tGenKey_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="Cust_records" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="blocked_cust" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="blocked_cust" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
