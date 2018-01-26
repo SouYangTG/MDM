@@ -44,7 +44,7 @@
 </xsd:complexType>
 <xsd:unique name="Customer_IM">
 <xsd:selector xpath="."/>
-<xsd:field xpath="Customer_IMId"/>
-</xsd:unique>
+            <xsd:field xpath="Customer_IMId"/>
+        </xsd:unique>
 </xsd:element>
 </xsd:schema>

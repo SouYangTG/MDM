@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<matchrule:MatchRuleMapInfo xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:matchrule="http://www.talend.org/mdm/server/matchrule">
+<matchrule:MatchRuleMapInfo xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:matchrule="http://www.talend.org/mdm/server/matchrule" modelName="Cust_IM">
   <entityMapInfos entityName="Customer_IM" matchRuleDefName="Cust_match_IM">
     <survivorshipKeyMap key="FirstName" value="Customer_IM/firstName"/>
     <survivorshipKeyMap key="LastName" value="Customer_IM/lastName"/>
