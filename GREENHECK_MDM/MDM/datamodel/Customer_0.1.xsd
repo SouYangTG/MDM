@@ -1,4 +1,5 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
 <xsd:element name="Account">
 <xsd:complexType>
 <xsd:all>
@@ -40,6 +41,222 @@
 <xsd:unique name="Account">
 <xsd:selector xpath="."/>
 <xsd:field xpath="AccountId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Contact">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ContactId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ContactName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Phone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Fax" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Contact">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ContactId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Partner">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="PartnerId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Name" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Partner">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PartnerId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Preferences">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="PreferencesId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="PreferenceType" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="PreferenceValue" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Preferences">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PreferencesId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Address">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AddressId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressType" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Street1" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Street2" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Street3" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Street4" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Street5" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Street6" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CareOf" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="City" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Region" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="County" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="PostalCode" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Country" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="JurisdictionCode" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Address">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AddressId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Roles">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="RolesId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="RoleDescription" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Roles">
+<xsd:selector xpath="."/>
+<xsd:field xpath="RolesId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="PricingStructure">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="PricingStructureId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="ProductCategoryID" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="ProramType" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="PricingMultiplier" type="xsd:decimal"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="PricingStructure">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PricingStructureId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="ProductCategory">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ProductCategoryId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ProductCategoryName" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="ProductCategory">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ProductCategoryId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Territory">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="TerritoryId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="TerritoryName" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Territory">
+<xsd:selector xpath="."/>
+<xsd:field xpath="TerritoryId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Office">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="OfficeId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Office">
+<xsd:selector xpath="."/>
+<xsd:field xpath="OfficeId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="MainOffice">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="MainOfficeId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="MainOffice">
+<xsd:selector xpath="."/>
+<xsd:field xpath="MainOfficeId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="AssociateOffice">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AssociateOfficeId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="AssociateOffice">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AssociateOfficeId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="BranchOffice">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="BranchOfficeId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="BranchOffice">
+<xsd:selector xpath="."/>
+<xsd:field xpath="BranchOfficeId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Trademark">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="TrademarkId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="TrademarkName" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Trademark">
+<xsd:selector xpath="."/>
+<xsd:field xpath="TrademarkId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="HouseAccount">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="HouseAccountId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="HouseAccount">
+<xsd:selector xpath="."/>
+<xsd:field xpath="HouseAccountId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Distributor">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="DistributorId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Distributor">
+<xsd:selector xpath="."/>
+<xsd:field xpath="DistributorId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="IntraCompany">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="IntraCompanyId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="IntraCompany">
+<xsd:selector xpath="."/>
+<xsd:field xpath="IntraCompanyId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="SalesGroup">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="SalesGroupId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="SalesGroupName" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="SalesGroup">
+<xsd:selector xpath="."/>
+<xsd:field xpath="SalesGroupId"/>
 </xsd:unique>
 </xsd:element>
 </xsd:schema>
