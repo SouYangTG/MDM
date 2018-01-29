@@ -305,4 +305,16 @@
 <xsd:field xpath="SalesOrgId"/>
 </xsd:unique>
 </xsd:element>
+<xsd:element name="DistributionChannel">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="DistributionChannelId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="DistributionChannelName" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="DistributionChannel">
+<xsd:selector xpath="."/>
+<xsd:field xpath="DistributionChannelId"/>
+</xsd:unique>
+</xsd:element>
 </xsd:schema>
