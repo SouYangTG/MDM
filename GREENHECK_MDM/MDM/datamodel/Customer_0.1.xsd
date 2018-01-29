@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="Account">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AccountId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="AccountNumber" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="AccountName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AccountName2" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="AccountStatus" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="StartDate" type="xsd:date"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CancelDate" type="xsd:date"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="FederalIDNbr" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="FreightTerms" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="StandardMultiplier" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Phone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Fax" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AlternatePhone" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AlternateFax" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="SpeedDial" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Currency" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Comments" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_Program" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_ActivationCode" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_ActivationDays" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_ActivationDate" type="xsd:date"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_ExpireDate" type="xsd:date"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_Version" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_CDQty" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_Release" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_UserAuthorization" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CAPS_Comments" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="MarketSegment" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="PartsMultiplier" type="xsd:decimal"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="RiskCategory" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="CRMAccountID" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Account">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AccountId"/>
+</xsd:unique>
+</xsd:element>
+</xsd:schema>
