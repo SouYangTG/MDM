@@ -259,4 +259,50 @@
 <xsd:field xpath="SalesGroupId"/>
 </xsd:unique>
 </xsd:element>
+<xsd:element name="Main">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="MainId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Main">
+<xsd:selector xpath="."/>
+<xsd:field xpath="MainId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Branch">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="BranchId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Branch">
+<xsd:selector xpath="."/>
+<xsd:field xpath="BranchId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="IndirectAccount">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="IndirectAccountId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="IndirectAccount">
+<xsd:selector xpath="."/>
+<xsd:field xpath="IndirectAccountId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="SalesOrg">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="SalesOrgId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="SalesOrgName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="SalesOrgStatus" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="SalesOrg">
+<xsd:selector xpath="."/>
+<xsd:field xpath="SalesOrgId"/>
+</xsd:unique>
+</xsd:element>
 </xsd:schema>
