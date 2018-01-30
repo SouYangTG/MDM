@@ -1,9 +1,8 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
 <xsd:element name="Account">
 <xsd:complexType>
 <xsd:all>
-<xsd:element name="AccountId" type="xsd:string"/>
+<xsd:element name="AccountId" type="AUTO_INCREMENT"/>
 <xsd:element maxOccurs="1" minOccurs="1" name="AccountNumber" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="1" name="AccountName" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="AccountName2" type="xsd:string"/>
@@ -13,7 +12,9 @@
 <xsd:element maxOccurs="1" minOccurs="0" name="FederalIDNbr" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="FreightTerms" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="StandardMultiplier" type="xsd:decimal"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string">
+<xsd:annotation/>
+</xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Phone" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Fax" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="AlternatePhone" type="xsd:string"/>
@@ -48,6 +49,12 @@
 <xsd:all>
 <xsd:element name="ContactId" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="1" name="ContactName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/Email</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Phone" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Fax" type="xsd:string"/>
 </xsd:all>
@@ -62,7 +69,12 @@
 <xsd:all>
 <xsd:element name="PartnerId" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Name" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/Website</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Partner">
@@ -86,7 +98,7 @@
 <xsd:element name="Address">
 <xsd:complexType>
 <xsd:all>
-<xsd:element name="AddressId" type="xsd:string"/>
+<xsd:element name="AddressId" type="AUTO_INCREMENT"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="AddressType" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Street1" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Street2" type="xsd:string"/>
@@ -317,4 +329,181 @@
 <xsd:field xpath="DistributionChannelId"/>
 </xsd:unique>
 </xsd:element>
+<xsd:element name="Transaction">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="TransactionId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Transaction">
+<xsd:selector xpath="."/>
+<xsd:field xpath="TransactionId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="PricingProcedure">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="PricingProcedureId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="PricingProcedure">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PricingProcedureId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="PricingConditions">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="PricingConditionsId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="PricingConditions">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PricingConditionsId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Location">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="LocationId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="LocationName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="MailingAddressID" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ShippingAddressID" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AccountNumber" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/AccountNumber</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Location">
+<xsd:selector xpath="."/>
+<xsd:field xpath="LocationId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="FoodServiceDealer">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="FoodServiceDealerId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="FoodServiceDealer">
+<xsd:selector xpath="."/>
+<xsd:field xpath="FoodServiceDealerId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Contractor">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ContractorId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Contractor">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ContractorId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="FireDistributor">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="FireDistributorId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="FireDistributor">
+<xsd:selector xpath="."/>
+<xsd:field xpath="FireDistributorId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Consultant">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ConsultantId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Consultant">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ConsultantId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Engineer">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="EngineerId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Engineer">
+<xsd:selector xpath="."/>
+<xsd:field xpath="EngineerId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Franchise">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="FranchiseId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Franchise">
+<xsd:selector xpath="."/>
+<xsd:field xpath="FranchiseId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Architect">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ArchitectId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Architect">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ArchitectId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="BuyingGroup">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="BuyingGroupId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="BuyingGroup">
+<xsd:selector xpath="."/>
+<xsd:field xpath="BuyingGroupId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Chain">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="ChainId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Chain">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ChainId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="PreferredDealer">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="PreferredDealerId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="PreferredDealer">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PreferredDealerId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="MailingAddress">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="MailingAddressId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="MailingAddress">
+<xsd:selector xpath="."/>
+<xsd:field xpath="MailingAddressId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:simpleType name="AUTO_INCREMENT">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
 </xsd:schema>
