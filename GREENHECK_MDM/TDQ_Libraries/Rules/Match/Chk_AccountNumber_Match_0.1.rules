@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_O4VwYAbdEeiQYNC2pBT3dw" name="Chk_AccountNumber_Match" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
+  <taggedValue xmi:id="_O4VwYQbdEeiQYNC2pBT3dw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_O4VwYgbdEeiQYNC2pBT3dw" tag="Author" value="security@company.com"/>
+  <taggedValue xmi:id="_O4VwYwbdEeiQYNC2pBT3dw" tag="Purpose"/>
+  <taggedValue xmi:id="_O4VwZAbdEeiQYNC2pBT3dw" tag="Description"/>
+  <taggedValue xmi:id="_O4VwZQbdEeiQYNC2pBT3dw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_O4VwZgbdEeiQYNC2pBT3dw" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_O4VwZwbdEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber">
+    <preAlgorithm xmi:id="_O4VwaAbdEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_O4VwaQbdEeiQYNC2pBT3dw" algorithmType="first_Char_EW" algorithmParameters=""/>
+    <postAlgorithm xmi:id="_O4VwagbdEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <matchRules xmi:id="_O4VwawbdEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="0.95">
+    <matchKeys xmi:id="_O4VwbAbdEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
+      <algorithm xmi:id="_O4VwbQbdEeiQYNC2pBT3dw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+  <survivorshipKeys xmi:id="_O4VwbgbdEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" allowManualResolution="true">
+    <function xmi:id="_O4VwbwbdEeiQYNC2pBT3dw" algorithmType="MostRecent" algorithmParameters=""/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
