@@ -25,7 +25,6 @@
       <relatedItems xmi:id="_wjJSPwadEeiKMtlpXWI9XA" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_wjJSQAadEeiKMtlpXWI9XA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_wjJSQQadEeiKMtlpXWI9XA" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_wjJSQgadEeiKMtlpXWI9XA" id="_M_yyoAaWEeiKMtlpXWI9XA - AccountOut" version="Latest" type="schema"/>
     </ItemsRelations>
     <migrationTask xmi:id="_M3EUkAUOEeiH_t9-BJI8Ag" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_M3EUkQUOEeiH_t9-BJI8Ag" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>

@@ -113,76 +113,18 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_M_yyoAaWEeiKMtlpXWI9XA - AccountOut" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="20" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="AccountId"/>
       <elementValue elementRef="ARRAY" value="Numeric.sequence(&quot;s1&quot; ,1 ,1 )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="AccountNumber"/>
       <elementValue elementRef="ARRAY" value="Numeric.random(0 ,100 )"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AccountName"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AccountName2"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AccountStatus"/>
-      <elementValue elementRef="ARRAY" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="StartDate"/>
       <elementValue elementRef="ARRAY" value="TalendDate.getRandomDate(&quot;2007-01-01&quot; ,&quot;2008-12-31&quot; )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CancelDate"/>
       <elementValue elementRef="ARRAY" value="TalendDate.getLastDayOfMonth(mydate )"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FederalIDNbr"/>
       <elementValue elementRef="ARRAY" value="Numeric.random(0 ,100 )"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FreightTerms"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="StandardMultiplier"/>
-      <elementValue elementRef="ARRAY" value=" "/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Website"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Phone"/>
-      <elementValue elementRef="ARRAY" value=" "/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Fax"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AlternatePhone"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AlternateFax"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SpeedDial"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Currency"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Comments"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_Program"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_ActivationCode"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_ActivationDays"/>
-      <elementValue elementRef="ARRAY" value=" "/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_ActivationDate"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_ExpireDate"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_Version"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_CDQty"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_Release"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_UserAuthorization"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CAPS_Comments"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MarketSegment"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PartsMultiplier"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RiskCategory"/>
-      <elementValue elementRef="ARRAY" value=""/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CRMAccountID"/>
-      <elementValue elementRef="ARRAY" value=""/>
     </elementParameter>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -193,15 +135,6 @@
       <column comment="" key="false" length="-1" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;random&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;min value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;0 &quot;},{&quot;PARAMETER_NAME&quot;:&quot;max value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;100 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Numeric&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="AccountName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="AccountName2" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="AccountStatus" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
       <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getRandomDate&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;min&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;2007-01-01\&quot; &quot;},{&quot;PARAMETER_NAME&quot;:&quot;max&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;2008-12-31\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDate&quot;}"/>
       </column>
@@ -210,81 +143,6 @@
       </column>
       <column comment="" key="false" length="-1" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;random&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;min value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;0 &quot;},{&quot;PARAMETER_NAME&quot;:&quot;max value&quot;,&quot;PARAMETER_VALUE&quot;:&quot;100 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;Numeric&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="FreightTerms" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="StandardMultiplier" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="Website" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="Phone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="Fax" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="AlternatePhone" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="AlternateFax" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="Email" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="SpeedDial" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="Currency" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="Comments" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_Program" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_ActivationCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_ActivationDays" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_ActivationDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_ExpireDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_Version" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_CDQty" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_Release" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_UserAuthorization" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CAPS_Comments" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="MarketSegment" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="PartsMultiplier" nullable="true" pattern="" precision="0" type="id_BigDecimal" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="RiskCategory" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
-      </column>
-      <column comment="" key="false" length="0" name="CRMAccountID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
     </metadata>
   </node>
@@ -442,37 +300,9 @@
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AccountId" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AccountNumber" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="AccountName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AccountName2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AccountStatus" type="id_String" nullable="true"/>
         <mapperTableEntries name="StartDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CancelDate" type="id_Date" nullable="true"/>
         <mapperTableEntries name="FederalIDNbr" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FreightTerms" type="id_String" nullable="true"/>
-        <mapperTableEntries name="StandardMultiplier" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Website" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Phone" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Fax" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AlternatePhone" type="id_String" nullable="true"/>
-        <mapperTableEntries name="AlternateFax" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
-        <mapperTableEntries name="SpeedDial" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Currency" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Comments" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_Program" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_ActivationCode" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_ActivationDays" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CAPS_ActivationDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CAPS_ExpireDate" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CAPS_Version" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_CDQty" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CAPS_Release" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_UserAuthorization" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_Comments" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MarketSegment" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartsMultiplier" type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="RiskCategory" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRMAccountID" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
