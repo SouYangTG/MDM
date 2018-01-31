@@ -1,5 +1,6 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<xsd:element name="Account">
+    <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
+    <xsd:element name="Account">
         <xsd:annotation>
 <xsd:appinfo source="X_Write">Customer_Admin</xsd:appinfo>
 </xsd:annotation>
@@ -10,7 +11,7 @@
 <xsd:appinfo source="X_Write">Customer_Admin</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element maxOccurs="1" minOccurs="1" name="AccountNumber" type="xsd:string">
+<xsd:element maxOccurs="1" minOccurs="1" name="AccountNumber" type="xsd:integer">
 <xsd:annotation>
 <xsd:appinfo source="X_Write">Customer_Admin</xsd:appinfo>
 </xsd:annotation>
