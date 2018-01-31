@@ -5,7 +5,7 @@
 </xsd:annotation>
         <xsd:complexType>
 <xsd:all>
-<xsd:element name="AccountId" type="AUTO_INCREMENT">
+<xsd:element name="AccountId" type="xsd:integer">
 <xsd:annotation>
 <xsd:appinfo source="X_Write">Customer_Admin</xsd:appinfo>
 </xsd:annotation>
