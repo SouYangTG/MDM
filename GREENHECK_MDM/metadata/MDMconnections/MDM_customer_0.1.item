@@ -47,7 +47,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM9gaWEeiKMtlpXWI9XA" label="AccountStatus" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM9waWEeiKMtlpXWI9XA" label="StartDate" talendType="id_Date"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-AaWEeiKMtlpXWI9XA" label="CancelDate" talendType="id_Date"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-QaWEeiKMtlpXWI9XA" label="FederalIDNbr" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-QaWEeiKMtlpXWI9XA" label="FederalIDNbr" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-gaWEeiKMtlpXWI9XA" label="FreightTerms" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-waWEeiKMtlpXWI9XA" label="StandardMultiplier" talendType="id_BigDecimal"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM_AaWEeiKMtlpXWI9XA" label="Website" talendType="id_String"/>
