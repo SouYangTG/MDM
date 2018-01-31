@@ -397,23 +397,110 @@
       <column comment="" key="false" length="0" name="CRMAccountID" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="Cust_data" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="AccountId" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="Cust_data/AccountId"/>
+        <nodes name="AccountNumber" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="Cust_data/AccountNumber"/>
+        <nodes name="AccountName" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="Cust_data/AccountName"/>
+        <nodes name="AccountName2" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="Cust_data/AccountName2"/>
+        <nodes name="AccountStatus" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="Cust_data/AccountStatus"/>
+        <nodes name="StartDate" type="id_Date" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="Cust_data/StartDate"/>
+        <nodes name="CancelDate" type="id_Date" outgoingConnections="//@node.1/@nodeData/@connections.6" xpath="Cust_data/CancelDate"/>
+        <nodes name="FederalIDNbr" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.7" xpath="Cust_data/FederalIDNbr"/>
+        <nodes name="FreightTerms" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.8" xpath="Cust_data/FreightTerms"/>
+        <nodes name="StandardMultiplier" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.9" xpath="Cust_data/StandardMultiplier"/>
+        <nodes name="Website" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.10" xpath="Cust_data/Website"/>
+        <nodes name="Phone" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.11" xpath="Cust_data/Phone"/>
+        <nodes name="Fax" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.12" xpath="Cust_data/Fax"/>
+        <nodes name="AlternatePhone" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.13" xpath="Cust_data/AlternatePhone"/>
+        <nodes name="AlternateFax" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.14" xpath="Cust_data/AlternateFax"/>
+        <nodes name="Email" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.15" xpath="Cust_data/Email"/>
+        <nodes name="SpeedDial" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.16" xpath="Cust_data/SpeedDial"/>
+        <nodes name="Currency" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.17" xpath="Cust_data/Currency"/>
+        <nodes name="Comments" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.18" xpath="Cust_data/Comments"/>
+        <nodes name="CAPS_Program" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.19" xpath="Cust_data/CAPS_Program"/>
+        <nodes name="CAPS_ActivationCode" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.20" xpath="Cust_data/CAPS_ActivationCode"/>
+        <nodes name="CAPS_ActivationDays" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.21" xpath="Cust_data/CAPS_ActivationDays"/>
+        <nodes name="CAPS_ActivationDate" type="id_Date" outgoingConnections="//@node.1/@nodeData/@connections.22" xpath="Cust_data/CAPS_ActivationDate"/>
+        <nodes name="CAPS_ExpireDate" type="id_Date" outgoingConnections="//@node.1/@nodeData/@connections.23" xpath="Cust_data/CAPS_ExpireDate"/>
+        <nodes name="CAPS_Version" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.24" xpath="Cust_data/CAPS_Version"/>
+        <nodes name="CAPS_CDQty" type="id_Integer" outgoingConnections="//@node.1/@nodeData/@connections.25" xpath="Cust_data/CAPS_CDQty"/>
+        <nodes name="CAPS_Release" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.26" xpath="Cust_data/CAPS_Release"/>
+        <nodes name="CAPS_UserAuthorization" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.27" xpath="Cust_data/CAPS_UserAuthorization"/>
+        <nodes name="CAPS_Comments" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.28" xpath="Cust_data/CAPS_Comments"/>
+        <nodes name="MarketSegment" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.29" xpath="Cust_data/MarketSegment"/>
+        <nodes name="PartsMultiplier" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.30" xpath="Cust_data/PartsMultiplier"/>
+        <nodes name="RiskCategory" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.31" xpath="Cust_data/RiskCategory"/>
+        <nodes name="CRMAccountID" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.32" xpath="Cust_data/CRMAccountID"/>
+      </inputTrees>
       <outputTrees name="staging_account">
-        <nodes name="customer" expression="" type="id_Document" xpath="staging_account/customer" pattern="">
-          <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer_IM" expression="" type="id_String" xpath="staging_account.customer:/Customer_IM">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata" type="id_String" xpath="staging_account.customer:/Customer_IM/xmlns:metadata" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer_IMId" expression=" blocked_cust.id" type="id_String" xpath="staging_account.customer:/Customer_IM/Customer_IMId" loop="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstName" expression="blocked_cust.firstName" type="id_String" xpath="staging_account.customer:/Customer_IM/firstName" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastName" expression="blocked_cust.lastName" type="id_String" xpath="staging_account.customer:/Customer_IM/lastName" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="street" expression="blocked_cust.street" type="id_String" xpath="staging_account.customer:/Customer_IM/street" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="zip" expression="blocked_cust.zip" type="id_String" xpath="staging_account.customer:/Customer_IM/zip" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="city" expression="blocked_cust.city" type="id_String" xpath="staging_account.customer:/Customer_IM/city" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="country" expression="blocked_cust.country" type="id_String" xpath="staging_account.customer:/Customer_IM/country" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="&quot;Cust-db&quot;" type="id_String" xpath="staging_account.customer:/Customer_IM/metadata:staging_blockkey"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="blocked_cust.T_GEN_KEY" type="id_String" xpath="staging_account.customer:/Customer_IM/metadata:staging_blockkey"/>
-          </children>
-        </nodes>
+        <nodes name="AccountId" expression="Cust_data.AccountId" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="staging_account/AccountId"/>
+        <nodes name="AccountNumber" expression="Cust_data.AccountNumber" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="staging_account/AccountNumber"/>
+        <nodes name="AccountName" expression="Cust_data.AccountName" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="staging_account/AccountName"/>
+        <nodes name="AccountName2" expression="Cust_data.AccountName2" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="staging_account/AccountName2"/>
+        <nodes name="AccountStatus" expression="Cust_data.AccountStatus" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="staging_account/AccountStatus"/>
+        <nodes name="StartDate" expression="Cust_data.StartDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="staging_account/StartDate"/>
+        <nodes name="CancelDate" expression="Cust_data.CancelDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="staging_account/CancelDate"/>
+        <nodes name="FederalIDNbr" expression="Cust_data.FederalIDNbr" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="staging_account/FederalIDNbr"/>
+        <nodes name="FreightTerms" expression="Cust_data.FreightTerms" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="staging_account/FreightTerms"/>
+        <nodes name="StandardMultiplier" expression="Cust_data.StandardMultiplier" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="staging_account/StandardMultiplier"/>
+        <nodes name="Website" expression="Cust_data.Website" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.10" xpath="staging_account/Website"/>
+        <nodes name="Phone" expression="Cust_data.Phone" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.11" xpath="staging_account/Phone"/>
+        <nodes name="Fax" expression="Cust_data.Fax" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.12" xpath="staging_account/Fax"/>
+        <nodes name="AlternatePhone" expression="Cust_data.AlternatePhone" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.13" xpath="staging_account/AlternatePhone"/>
+        <nodes name="AlternateFax" expression="Cust_data.AlternateFax" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.14" xpath="staging_account/AlternateFax"/>
+        <nodes name="Email" expression="Cust_data.Email" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.15" xpath="staging_account/Email"/>
+        <nodes name="SpeedDial" expression="Cust_data.SpeedDial" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.16" xpath="staging_account/SpeedDial"/>
+        <nodes name="Currency" expression="Cust_data.Currency" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.17" xpath="staging_account/Currency"/>
+        <nodes name="Comments" expression="Cust_data.Comments" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.18" xpath="staging_account/Comments"/>
+        <nodes name="CAPS_Program" expression="Cust_data.CAPS_Program" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.19" xpath="staging_account/CAPS_Program"/>
+        <nodes name="CAPS_ActivationCode" expression="Cust_data.CAPS_ActivationCode" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.20" xpath="staging_account/CAPS_ActivationCode"/>
+        <nodes name="CAPS_ActivationDays" expression="Cust_data.CAPS_ActivationDays" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.21" xpath="staging_account/CAPS_ActivationDays"/>
+        <nodes name="CAPS_ActivationDate" expression="Cust_data.CAPS_ActivationDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.22" xpath="staging_account/CAPS_ActivationDate"/>
+        <nodes name="CAPS_ExpireDate" expression="Cust_data.CAPS_ExpireDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.23" xpath="staging_account/CAPS_ExpireDate"/>
+        <nodes name="CAPS_Version" expression="Cust_data.CAPS_Version" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.24" xpath="staging_account/CAPS_Version"/>
+        <nodes name="CAPS_CDQty" expression="Cust_data.CAPS_CDQty" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.25" xpath="staging_account/CAPS_CDQty"/>
+        <nodes name="CAPS_Release" expression="Cust_data.CAPS_Release" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.26" xpath="staging_account/CAPS_Release"/>
+        <nodes name="CAPS_UserAuthorization" expression="Cust_data.CAPS_UserAuthorization" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.27" xpath="staging_account/CAPS_UserAuthorization"/>
+        <nodes name="CAPS_Comments" expression="Cust_data.CAPS_Comments" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.28" xpath="staging_account/CAPS_Comments"/>
+        <nodes name="MarketSegment" expression="Cust_data.MarketSegment" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.29" xpath="staging_account/MarketSegment"/>
+        <nodes name="PartsMultiplier" expression="Cust_data.PartsMultiplier" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.30" xpath="staging_account/PartsMultiplier"/>
+        <nodes name="RiskCategory" expression="Cust_data.RiskCategory" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.31" xpath="staging_account/RiskCategory"/>
+        <nodes name="CRMAccountID" expression="Cust_data.CRMAccountID" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.32" xpath="staging_account/CRMAccountID"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.10"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.11" target="//@node.1/@nodeData/@outputTrees.0/@nodes.11"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.12" target="//@node.1/@nodeData/@outputTrees.0/@nodes.12"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.13" target="//@node.1/@nodeData/@outputTrees.0/@nodes.13"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.14" target="//@node.1/@nodeData/@outputTrees.0/@nodes.14"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.15" target="//@node.1/@nodeData/@outputTrees.0/@nodes.15"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.16" target="//@node.1/@nodeData/@outputTrees.0/@nodes.16"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.17" target="//@node.1/@nodeData/@outputTrees.0/@nodes.17"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.18" target="//@node.1/@nodeData/@outputTrees.0/@nodes.18"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.19" target="//@node.1/@nodeData/@outputTrees.0/@nodes.19"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.20" target="//@node.1/@nodeData/@outputTrees.0/@nodes.20"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.21" target="//@node.1/@nodeData/@outputTrees.0/@nodes.21"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.22" target="//@node.1/@nodeData/@outputTrees.0/@nodes.22"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.23" target="//@node.1/@nodeData/@outputTrees.0/@nodes.23"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.24" target="//@node.1/@nodeData/@outputTrees.0/@nodes.24"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.25" target="//@node.1/@nodeData/@outputTrees.0/@nodes.25"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.26" target="//@node.1/@nodeData/@outputTrees.0/@nodes.26"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.27" target="//@node.1/@nodeData/@outputTrees.0/@nodes.27"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.28" target="//@node.1/@nodeData/@outputTrees.0/@nodes.28"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.29" target="//@node.1/@nodeData/@outputTrees.0/@nodes.29"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.30" target="//@node.1/@nodeData/@outputTrees.0/@nodes.30"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.31" target="//@node.1/@nodeData/@outputTrees.0/@nodes.31"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.32" target="//@node.1/@nodeData/@outputTrees.0/@nodes.32"/>
     </nodeData>
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="224">
