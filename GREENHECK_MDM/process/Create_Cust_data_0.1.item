@@ -272,7 +272,7 @@
         <mapperTableEntries name="CancelDate" expression="row1.CancelDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FederalIDNbr" expression="row1.FederalIDNbr " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="FreightTerms" expression="&quot;&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="StandardMultiplier" expression="1.25" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="StandardMultiplier" expression="null" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Website" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Phone" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="Fax" expression="&quot;&quot;" type="id_String" nullable="true"/>
@@ -293,7 +293,7 @@
         <mapperTableEntries name="CAPS_UserAuthorization" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="CAPS_Comments" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="MarketSegment" expression="&quot;&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartsMultiplier" expression="1.25" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="PartsMultiplier" expression="null" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="RiskCategory" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="CRMAccountID" expression="&quot;&quot;" type="id_String" nullable="true"/>
       </outputTables>
