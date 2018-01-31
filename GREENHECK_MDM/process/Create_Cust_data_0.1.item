@@ -266,36 +266,36 @@
         <mapperTableEntries name="AccountId" expression="row1.AccountId " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AccountNumber" expression="row1.AccountNumber " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AccountName" expression="TalendDataGenerator.getFirstName() + &quot; &quot; + TalendDataGenerator.getLastName() " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AccountName2" expression="row1.AccountName2 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AccountStatus" expression="row1.AccountStatus " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountName2" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountStatus" expression="&quot;Y&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="StartDate" expression="row1.StartDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CancelDate" expression="row1.CancelDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FederalIDNbr" expression="row1.FederalIDNbr " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FreightTerms" expression="row1.FreightTerms " type="id_String" nullable="true"/>
-        <mapperTableEntries name="StandardMultiplier" expression="row1.StandardMultiplier " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="Website" expression="row1.Website " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Phone" expression="row1.Phone " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Fax" expression="row1.Fax " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AlternatePhone" expression="row1.AlternatePhone " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AlternateFax" expression="row1.AlternateFax " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Email" expression="row1.Email " type="id_String" nullable="true"/>
-        <mapperTableEntries name="SpeedDial" expression="row1.SpeedDial " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Currency" expression="row1.Currency " type="id_String" nullable="true"/>
-        <mapperTableEntries name="Comments" expression="row1.Comments " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_Program" expression="row1.CAPS_Program " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_ActivationCode" expression="row1.CAPS_ActivationCode " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_ActivationDays" expression="row1.CAPS_ActivationDays " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CAPS_ActivationDate" expression="row1.CAPS_ActivationDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CAPS_ExpireDate" expression="row1.CAPS_ExpireDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CAPS_Version" expression="row1.CAPS_Version " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_CDQty" expression="row1.CAPS_CDQty " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="CAPS_Release" expression="row1.CAPS_Release " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_UserAuthorization" expression="row1.CAPS_UserAuthorization " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CAPS_Comments" expression="row1.CAPS_Comments " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MarketSegment" expression="row1.MarketSegment " type="id_String" nullable="true"/>
-        <mapperTableEntries name="PartsMultiplier" expression="row1.PartsMultiplier " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="RiskCategory" expression="row1.RiskCategory " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRMAccountID" expression="row1.CRMAccountID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FreightTerms" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="StandardMultiplier" expression="0" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="Website" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Phone" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fax" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AlternatePhone" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AlternateFax" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Email" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SpeedDial" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Currency" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Comments" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CAPS_Program" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CAPS_ActivationCode" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CAPS_ActivationDays" expression="5" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CAPS_ActivationDate" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CAPS_ExpireDate" expression="TalendDate.getCurrentDate() " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CAPS_Version" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CAPS_CDQty" expression="1" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CAPS_Release" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CAPS_UserAuthorization" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CAPS_Comments" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MarketSegment" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PartsMultiplier" expression="0" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="RiskCategory" expression="&quot;&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRMAccountID" expression="&quot;&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AccountId" type="id_Integer" nullable="true"/>
