@@ -259,7 +259,7 @@
         <mapperTableEntries name="AccountName2" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountStatus" expression="&quot;Y&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="StartDate" expression="TalendDate.parseDate(&quot;yyyy-mm-dd&quot;,TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2018-12-31&quot;))) " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CancelDate" expression="TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2008-12-31&quot;) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CancelDate" expression="TalendDate.parseDate(&quot;yyyy-mm-dd&quot;,TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2018-12-31&quot;))) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FederalIDNbr" expression="row1.FederalIDNbr " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="FreightTerms" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="StandardMultiplier" expression="&quot;&quot;" type="id_String" nullable="true"/>
