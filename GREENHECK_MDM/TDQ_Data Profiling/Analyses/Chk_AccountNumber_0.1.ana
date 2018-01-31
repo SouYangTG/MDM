@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_-qLj4AbVEeiQYNC2pBT3dw" name="Chk_AccountNumber" creationDate="2018-01-31T16:27:53.180-0600">
+  <taggedValue xmi:id="_-qLj4QbVEeiQYNC2pBT3dw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_-qLj4gbVEeiQYNC2pBT3dw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_-qLj4wbVEeiQYNC2pBT3dw" tag="Author" value="security@company.com"/>
+  <taggedValue xmi:id="_-qLj5AbVEeiQYNC2pBT3dw" tag="Purpose"/>
+  <taggedValue xmi:id="_-qLj5QbVEeiQYNC2pBT3dw" tag="Description"/>
+  <taggedValue xmi:id="_-qLj5gbVEeiQYNC2pBT3dw" tag="Version" value="0.1"/>
+  <context xmi:id="_-qLj5wbVEeiQYNC2pBT3dw"/>
+  <results xmi:id="_-qLj6AbVEeiQYNC2pBT3dw">
+    <resultMetadata xmi:id="_-qLj6QbVEeiQYNC2pBT3dw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_-qMK8AbVEeiQYNC2pBT3dw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_-qMK8QbVEeiQYNC2pBT3dw">
+      <builtInMatchRuleDefinition xmi:id="_-qMK8gbVEeiQYNC2pBT3dw"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_-qMK8wbVEeiQYNC2pBT3dw" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
