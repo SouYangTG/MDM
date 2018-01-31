@@ -367,8 +367,8 @@
       <column comment="" key="false" length="0" name="AccountName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="AccountName2" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="AccountStatus" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="FreightTerms" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="StandardMultiplier" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -384,8 +384,8 @@
       <column comment="" key="false" length="0" name="CAPS_Program" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CAPS_ActivationCode" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CAPS_ActivationDays" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CAPS_ActivationDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="CAPS_ExpireDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CAPS_ActivationDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="CAPS_ExpireDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CAPS_Version" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CAPS_CDQty" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="CAPS_Release" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -438,8 +438,8 @@
         <nodes name="AccountName" expression="Cust_data.AccountName" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="staging_account/AccountName"/>
         <nodes name="AccountName2" expression="Cust_data.AccountName2" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="staging_account/AccountName2"/>
         <nodes name="AccountStatus" expression="Cust_data.AccountStatus" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="staging_account/AccountStatus"/>
-        <nodes name="StartDate" expression="Cust_data.StartDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="staging_account/StartDate"/>
-        <nodes name="CancelDate" expression="Cust_data.CancelDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="staging_account/CancelDate"/>
+        <nodes name="StartDate" expression="Cust_data.StartDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="staging_account/StartDate" pattern="&quot;yyyy-mm-dd&quot;"/>
+        <nodes name="CancelDate" expression="Cust_data.CancelDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.6" xpath="staging_account/CancelDate" pattern="&quot;yyyy-mm-dd&quot;"/>
         <nodes name="FederalIDNbr" expression="Cust_data.FederalIDNbr" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.7" xpath="staging_account/FederalIDNbr"/>
         <nodes name="FreightTerms" expression="Cust_data.FreightTerms" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.8" xpath="staging_account/FreightTerms"/>
         <nodes name="StandardMultiplier" expression="Cust_data.StandardMultiplier" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.9" xpath="staging_account/StandardMultiplier"/>
@@ -455,8 +455,8 @@
         <nodes name="CAPS_Program" expression="Cust_data.CAPS_Program" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.19" xpath="staging_account/CAPS_Program"/>
         <nodes name="CAPS_ActivationCode" expression="Cust_data.CAPS_ActivationCode" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.20" xpath="staging_account/CAPS_ActivationCode"/>
         <nodes name="CAPS_ActivationDays" expression="Cust_data.CAPS_ActivationDays" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.21" xpath="staging_account/CAPS_ActivationDays"/>
-        <nodes name="CAPS_ActivationDate" expression="Cust_data.CAPS_ActivationDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.22" xpath="staging_account/CAPS_ActivationDate"/>
-        <nodes name="CAPS_ExpireDate" expression="Cust_data.CAPS_ExpireDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.23" xpath="staging_account/CAPS_ExpireDate"/>
+        <nodes name="CAPS_ActivationDate" expression="Cust_data.CAPS_ActivationDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.22" xpath="staging_account/CAPS_ActivationDate" pattern="&quot;yyyy-mm-dd&quot;"/>
+        <nodes name="CAPS_ExpireDate" expression="Cust_data.CAPS_ExpireDate" type="id_Date" incomingConnections="//@node.1/@nodeData/@connections.23" xpath="staging_account/CAPS_ExpireDate" pattern="&quot;yyyy-mm-dd&quot;"/>
         <nodes name="CAPS_Version" expression="Cust_data.CAPS_Version" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.24" xpath="staging_account/CAPS_Version"/>
         <nodes name="CAPS_CDQty" expression="Cust_data.CAPS_CDQty" type="id_Integer" incomingConnections="//@node.1/@nodeData/@connections.25" xpath="staging_account/CAPS_CDQty"/>
         <nodes name="CAPS_Release" expression="Cust_data.CAPS_Release" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.26" xpath="staging_account/CAPS_Release"/>
