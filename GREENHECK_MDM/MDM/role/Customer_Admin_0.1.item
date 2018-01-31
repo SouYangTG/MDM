@@ -14,7 +14,9 @@
   <specification xmi:id="_R2ZnJgaUEeiKMtlpXWI9XA" admin="true" objectType="Transformer"/>
   <specification xmi:id="_R2ZnJwaUEeiKMtlpXWI9XA" objectType="Stored Procedure"/>
   <specification xmi:id="_R2ZnKAaUEeiKMtlpXWI9XA" objectType="Service"/>
-  <specification xmi:id="_R2ZnKQaUEeiKMtlpXWI9XA" objectType="View"/>
+  <specification xmi:id="_R2ZnKQaUEeiKMtlpXWI9XA" objectType="View">
+    <instance xmi:id="_9fbcEAaVEeiKMtlpXWI9XA" instanceName="Browse_items_Account" writable="true"/>
+  </specification>
   <specification xmi:id="_R2ZnKgaUEeiKMtlpXWI9XA" objectType="Routing Rule">
     <instance xmi:id="_R2ZnKwaUEeiKMtlpXWI9XA" instanceName=".*">
       <parameter></parameter>

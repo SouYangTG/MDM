@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_9eJCoQaVEeiKMtlpXWI9XA" name="Browse_items_Account" description="[EN:Account]" transformerPK="">
+  <searchableBusinessElements>Account/AccountId</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountNumber</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountName</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountName2</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountStatus</searchableBusinessElements>
+  <viewableBusinessElements>Account/AccountId</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountNumber</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountName</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountName2</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountStatus</viewableBusinessElements>
+  <isTransformerActive xmi:id="_9eJCogaVEeiKMtlpXWI9XA"/>
+</mdmserverobject:WSViewE>
