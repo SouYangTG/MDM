@@ -13,7 +13,7 @@
   </blockKeys>
   <matchRules xmi:id="_kIreWwbZEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="0.95">
     <matchKeys xmi:id="_kIreXAbZEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
-      <algorithm xmi:id="_kIreXQbZEeiQYNC2pBT3dw" algorithmType="EXACT" algorithmParameters=""/>
+      <algorithm xmi:id="_kIreXQbZEeiQYNC2pBT3dw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
     </matchKeys>
   </matchRules>
   <survivorshipKeys xmi:id="_kIreXgbZEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" allowManualResolution="true">
