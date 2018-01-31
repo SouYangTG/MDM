@@ -258,7 +258,7 @@
         <mapperTableEntries name="AccountName" expression="TalendDataGenerator.getFirstName() + &quot; &quot; + TalendDataGenerator.getLastName() " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountName2" expression="&quot;&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountStatus" expression="&quot;Y&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="StartDate" expression="TalendDate.formatDate(TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2008-12-31&quot;), &quot;yyyy-mm-dd&quot;) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="StartDate" expression="TalendDate.formatDate(&quot;yyyy-mm-dd&quot;, TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2008-12-31&quot;)) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CancelDate" expression="TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2008-12-31&quot;) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="FederalIDNbr" expression="row1.FederalIDNbr " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="FreightTerms" expression="&quot;&quot;" type="id_String" nullable="true"/>
