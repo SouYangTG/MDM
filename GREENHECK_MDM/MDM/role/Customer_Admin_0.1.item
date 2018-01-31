@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Lsk-oQaTEeiKMtlpXWI9XA" name="Customer_Admin" description="[EN:Administrator]">
+  <specification xmi:id="_Lsk-ogaTEeiKMtlpXWI9XA" admin="true" objectType="Routing Engine V2"/>
+  <specification xmi:id="_Lsk-owaTEeiKMtlpXWI9XA" objectType="Routing Rule">
+    <instance xmi:id="_LsllsAaTEeiKMtlpXWI9XA" instanceName=".*">
+      <parameter></parameter>
+    </instance>
+  </specification>
+  <specification xmi:id="_LsllsQaTEeiKMtlpXWI9XA" admin="true" objectType="Transformer Plugin"/>
+  <specification xmi:id="_LsllsgaTEeiKMtlpXWI9XA" objectType="Data Cluster">
+    <instance xmi:id="_LsllswaTEeiKMtlpXWI9XA" instanceName="UpdateReport" writable="true">
+      <parameter></parameter>
+    </instance>
+    <instance xmi:id="_LslltAaTEeiKMtlpXWI9XA" instanceName="PROVISIONING" writable="true">
+      <parameter></parameter>
+    </instance>
+  </specification>
+  <specification xmi:id="_LslltQaTEeiKMtlpXWI9XA" admin="true" objectType="Transformer"/>
+  <specification xmi:id="_LslltgaTEeiKMtlpXWI9XA" admin="true" objectType="Transformer V2"/>
+  <specification xmi:id="_LslltwaTEeiKMtlpXWI9XA" admin="true" objectType="Routing Order V2 Failed"/>
+  <specification xmi:id="_LslluAaTEeiKMtlpXWI9XA" objectType="Stored Procedure"/>
+  <specification xmi:id="_LslluQaTEeiKMtlpXWI9XA" admin="true" objectType="Routing Order V2 Completed"/>
+  <specification xmi:id="_LsllugaTEeiKMtlpXWI9XA" objectType="Configuration Info"/>
+  <specification xmi:id="_LslluwaTEeiKMtlpXWI9XA" admin="true" objectType="Item"/>
+  <specification xmi:id="_LsllvAaTEeiKMtlpXWI9XA" objectType="Service"/>
+  <specification xmi:id="_LsllvQaTEeiKMtlpXWI9XA" objectType="View"/>
+  <specification xmi:id="_LsllvgaTEeiKMtlpXWI9XA" objectType="Menu">
+    <instance xmi:id="_LsllvwaTEeiKMtlpXWI9XA" instanceName="WelcomePortal">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllwAaTEeiKMtlpXWI9XA" instanceName="Search">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllwQaTEeiKMtlpXWI9XA" instanceName="BrowseRecords" writable="true">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllwgaTEeiKMtlpXWI9XA" instanceName="BrowseRecordsInStaging" writable="true">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllwwaTEeiKMtlpXWI9XA" instanceName="RecycleBin">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllxAaTEeiKMtlpXWI9XA" instanceName="UpdateReport">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllxQaTEeiKMtlpXWI9XA" instanceName="Hierarchy">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllxgaTEeiKMtlpXWI9XA" instanceName="BonitaWorkflowTasks">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllxwaTEeiKMtlpXWI9XA" instanceName="Datastewardship">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllyAaTEeiKMtlpXWI9XA" instanceName="CrossReference">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllyQaTEeiKMtlpXWI9XA" instanceName="UserManager">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllygaTEeiKMtlpXWI9XA" instanceName="LicenseManager">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+    <instance xmi:id="_LsllywaTEeiKMtlpXWI9XA" instanceName="StagingArea">
+      <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<role-menu-parameters position="1"><parent-iD></parent-iD></role-menu-parameters>]]></parameter>
+    </instance>
+  </specification>
+  <specification xmi:id="_LsllzAaTEeiKMtlpXWI9XA" objectType="Data Model">
+    <instance xmi:id="_LsllzQaTEeiKMtlpXWI9XA" instanceName="CONF" writable="true">
+      <parameter></parameter>
+    </instance>
+    <instance xmi:id="_LsllzgaTEeiKMtlpXWI9XA" instanceName="UpdateReport">
+      <parameter></parameter>
+    </instance>
+    <instance xmi:id="_LsllzwaTEeiKMtlpXWI9XA" instanceName="PROVISIONING" writable="true">
+      <parameter></parameter>
+    </instance>
+  </specification>
+  <specification xmi:id="_Lsll0AaTEeiKMtlpXWI9XA" objectType="Role">
+    <instance xmi:id="_Lsll0QaTEeiKMtlpXWI9XA" instanceName=".*">
+      <parameter></parameter>
+    </instance>
+  </specification>
+  <specification xmi:id="_Lsll0gaTEeiKMtlpXWI9XA" objectType="Background Job"/>
+  <specification xmi:id="_Lsll0waTEeiKMtlpXWI9XA" admin="true" objectType="Transformer Plugin V2"/>
+</mdmserverobject:WSRoleE>
