@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_9eJCoQaVEeiKMtlpXWI9XA" name="Browse_items_Account" description="[EN:Account]" timestamp="1517440129567" digestValue="96c5289189351b9e6528d2372c92407f" lastServerName="server01" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_9eJCoQaVEeiKMtlpXWI9XA" name="Browse_items_Account" description="[EN:Account]" timestamp="1517441141793" digestValue="96c5289189351b9e6528d2372c92407f" lastServerName="server01" transformerPK="">
   <searchableBusinessElements>Account/AccountId</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountNumber</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountName</searchableBusinessElements>
