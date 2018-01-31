@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_kIreUAbZEeiQYNC2pBT3dw" name="Chk_AccountNumber_Match" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="1.0">
+  <taggedValue xmi:id="_kIreUQbZEeiQYNC2pBT3dw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_kIreUgbZEeiQYNC2pBT3dw" tag="Author" value="security@company.com"/>
+  <taggedValue xmi:id="_kIreUwbZEeiQYNC2pBT3dw" tag="Purpose"/>
+  <taggedValue xmi:id="_kIreVAbZEeiQYNC2pBT3dw" tag="Description"/>
+  <taggedValue xmi:id="_kIreVQbZEeiQYNC2pBT3dw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_kIreVgbZEeiQYNC2pBT3dw" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_kIreVwbZEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber">
+    <preAlgorithm xmi:id="_kIreWAbZEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_kIreWQbZEeiQYNC2pBT3dw" algorithmType="exact" algorithmParameters=""/>
+    <postAlgorithm xmi:id="_kIreWgbZEeiQYNC2pBT3dw" algorithmType="useDefault" algorithmParameters="1"/>
+  </blockKeys>
+  <matchRules xmi:id="_kIreWwbZEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="1.0">
+    <matchKeys xmi:id="_kIreXAbZEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+      <algorithm xmi:id="_kIreXQbZEeiQYNC2pBT3dw" algorithmType="EXACT" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+  <survivorshipKeys xmi:id="_kIreXgbZEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" allowManualResolution="true">
+    <function xmi:id="_kIreXwbZEeiQYNC2pBT3dw" algorithmType="MostRecent" algorithmParameters=""/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
