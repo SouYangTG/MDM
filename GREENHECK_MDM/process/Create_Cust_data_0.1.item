@@ -316,10 +316,10 @@
       <column comment="" key="false" length="0" name="AccountStatus" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="0" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
@@ -405,14 +405,14 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Cust_Out">
-        <mapperTableEntries name="AccountId" expression="row1.AccountId " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountId" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountNumber" expression="row1.AccountNumber " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountName" expression="row1.AccountName " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountName2" expression="row1.AccountName2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountStatus" expression="row1.AccountStatus " type="id_String" nullable="true"/>
-        <mapperTableEntries name="StartDate" expression="row1.StartDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CancelDate" expression="row1.CancelDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="FederalIDNbr" expression="row1.FederalIDNbr " type="id_String" nullable="true"/>
+        <mapperTableEntries name="StartDate" expression="TalendDate.getRandomDate(&quot;2007-01-01&quot;,&quot;2008-12-31&quot;)&quot;2018-01-31&quot; " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CancelDate" expression="&quot;&quot;" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="FederalIDNbr" expression="Numeric.random(0,100) " type="id_String" nullable="true"/>
         <mapperTableEntries name="FreightTerms" expression="row1.FreightTerms " type="id_String" nullable="true"/>
         <mapperTableEntries name="StandardMultiplier" expression="row1.StandardMultiplier " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Website" expression="row1.Website " type="id_String" nullable="true"/>
@@ -522,10 +522,10 @@
       <column comment="" key="false" length="0" name="AccountStatus" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="0" name="StartDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true">
+      <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="0" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
