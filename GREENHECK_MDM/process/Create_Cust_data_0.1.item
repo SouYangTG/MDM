@@ -188,7 +188,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="AccountOut" name="tRowGenerator_1">
       <column comment="" key="false" length="-1" name="AccountId" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="AccountName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="AccountName2" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="AccountStatus" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
@@ -235,10 +235,10 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="Cust_Out">
-      <column comment="" key="false" length="0" name="AccountId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="0" name="AccountId" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="0" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="0" name="AccountName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
@@ -339,8 +339,8 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="Cust_Out">
-        <mapperTableEntries name="AccountId" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AccountNumber" expression="Numeric.random(0,100) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountId" expression="Numeric.sequence(&quot;s1&quot;,1,1) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AccountNumber" expression="Numeric.random(0,100) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AccountName" expression="TalendDataGenerator.getFirstName() + &quot; &quot; + TalendDataGenerator.getLastName() " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountName2" expression="row1.AccountName2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountStatus" expression="row1.AccountStatus " type="id_String" nullable="true"/>
@@ -375,7 +375,7 @@
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="AccountId" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="AccountNumber" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AccountNumber" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="AccountName" type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountName2" type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountStatus" type="id_String" nullable="true"/>
@@ -440,11 +440,11 @@
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="AccountOut" name="tFileOutputDelimited_1">
-      <column comment="" key="false" length="0" name="AccountId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
-        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="0" name="AccountId" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="0" name="AccountNumber" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="0" name="AccountName" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
