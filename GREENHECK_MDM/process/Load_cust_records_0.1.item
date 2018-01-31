@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/Program Files/Talend-Studio-20170623_1246-V6.4.1/workspace/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Program Files/Talend-Studio-20170623_1246-V6.4.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_uo5_8AK0Eeiq4ca-xXg-UQ" name="DQTechnical"/>
+    <routinesParameter id="_uovn4AK0Eeiq4ca-xXg-UQ" name="DataMasking"/>
+    <routinesParameter id="_uoS78AK0Eeiq4ca-xXg-UQ" name="DataOperation"/>
+    <routinesParameter id="_uozSQAK0Eeiq4ca-xXg-UQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_uoxdEAK0Eeiq4ca-xXg-UQ" name="DataQuality"/>
+    <routinesParameter id="_uo3jsAK0Eeiq4ca-xXg-UQ" name="DqStringHandling"/>
+    <routinesParameter id="_uo8cMAK0Eeiq4ca-xXg-UQ" name="MDM"/>
+    <routinesParameter id="_uoUxIAK0Eeiq4ca-xXg-UQ" name="Mathematical"/>
+    <routinesParameter id="_uoX0cAK0Eeiq4ca-xXg-UQ" name="Numeric"/>
+    <routinesParameter id="_uoaQsAK0Eeiq4ca-xXg-UQ" name="Relational"/>
+    <routinesParameter id="_ukpyEAK0Eeiq4ca-xXg-UQ" name="SQLike"/>
+    <routinesParameter id="_uocF4AK0Eeiq4ca-xXg-UQ" name="StringHandling"/>
+    <routinesParameter id="_uoeiIAK0Eeiq4ca-xXg-UQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_uoo6MAK0Eeiq4ca-xXg-UQ" name="TalendDate"/>
+    <routinesParameter id="_uotLoAK0Eeiq4ca-xXg-UQ" name="TalendStringUtil"/>
+    <routinesParameter id="_uorWcAK0Eeiq4ca-xXg-UQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_NKGpsAK7Eeiq4ca-xXg-UQ" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/MDM/Integrated/MDM_Integrated_Matching/Lab_Files/customer_file.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_NKGpsAK7Eeiq4ca-xXg-UQ - Customer_metadata" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_NKGpsAK7Eeiq4ca-xXg-UQ - Customer_metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files/Talend-Studio-20170623_1246-V6.4.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="street"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="firstName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lastName"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="street"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="zip"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="city"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer_records_IM"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Customer_metadata" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="5" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="firstName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="street" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="Customer_metadata" name="REJECT">
+      <column comment="" key="false" length="5" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="firstName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="street" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tGenKey" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tGenKey_1" show="false"/>
+    <elementParameter field="MATCH_RULE_IMEX_CONTROLLER" name="MATCH_RULE_IMEX" value="false"/>
+    <elementParameter field="TABLE" name="ALGO">
+      <elementValue elementRef="PRECOLUMN" value="lastName"/>
+      <elementValue elementRef="PRE_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="PRE_VALUE" value=""/>
+      <elementValue elementRef="KEY_ALGO" value="first_N_Char"/>
+      <elementValue elementRef="KEY_VALUE" value="1"/>
+      <elementValue elementRef="POST_ALGO" value="NON_ALGO"/>
+      <elementValue elementRef="POST_VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SHOW_HELP_KEY" value="false"/>
+    <elementParameter field="LABEL" name="HELP_KEY" value="Notice that how to fill algorithm parameter:&#xA;(1) N first characters of each word: fill in a digit number, like 2 or 12, etc.&#xA;(2) first N characters of the string: fill in a digit number&#xA;(3) last N characters of the string: fill in a digit number&#xA;(4) first N consonants of the string: fill in a digit number&#xA;(5) first N vowels of the string: fill in a digit number&#xA;(6) substring(a, b): fill a String like &quot;2;4&quot;, for example, &quot;abcdef&quot; returns &quot;cd&quot; on impact&#xA;(7) pick characters: fill a String like &quot;1;2-4;5&quot;, for example, &quot;abcdef&quot; returns &quot;bcdf&quot; on impact&#xA;(8) use default value: any String you want.(it is to replace empty value after key algorithm)&#xA;(9) add left position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;(10) add right position character: about usual separators like parenthesis and so on, applied after &quot;use default value&quot;&#xA;" show="false"/>
+    <elementParameter field="CHECK" name="IS_SHADOW_JOB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Customer_metadata" name="tGenKey_1">
+      <column comment="" key="false" length="5" name="id" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="firstName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="lastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="17" name="street" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="zip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="city" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="country" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="T_GEN_KEY" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="staging_customer" name="staging_customer">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="blocked_cust" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="id" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.7" xpath="blocked_cust/id"/>
+        <nodes name="firstName" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.1" xpath="blocked_cust/firstName"/>
+        <nodes name="lastName" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.2" xpath="blocked_cust/lastName"/>
+        <nodes name="street" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.3" xpath="blocked_cust/street"/>
+        <nodes name="zip" type="id_Integer" outgoingConnections="//@node.2/@nodeData/@connections.4" xpath="blocked_cust/zip"/>
+        <nodes name="city" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.5" xpath="blocked_cust/city"/>
+        <nodes name="country" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.6" xpath="blocked_cust/country"/>
+        <nodes name="T_GEN_KEY" type="id_String" outgoingConnections="//@node.2/@nodeData/@connections.0" xpath="blocked_cust/T_GEN_KEY"/>
+      </inputTrees>
+      <outputTrees name="staging_customer">
+        <nodes name="customer" expression="" type="id_Document" xpath="staging_customer/customer" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer_IM" expression="" type="id_String" xpath="staging_customer.customer:/Customer_IM">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata" type="id_String" xpath="staging_customer.customer:/Customer_IM/xmlns:metadata" nodeType="NAME_SPACE" defaultValue="http://www.talend.com/mdm/metadata"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer_IMId" expression=" blocked_cust.id" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.7" xpath="staging_customer.customer:/Customer_IM/Customer_IMId" loop="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="firstName" expression="blocked_cust.firstName" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.1" xpath="staging_customer.customer:/Customer_IM/firstName" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="lastName" expression="blocked_cust.lastName" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.2" xpath="staging_customer.customer:/Customer_IM/lastName" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="street" expression="blocked_cust.street" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.3" xpath="staging_customer.customer:/Customer_IM/street" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="zip" expression="blocked_cust.zip" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.4" xpath="staging_customer.customer:/Customer_IM/zip" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="city" expression="blocked_cust.city" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.5" xpath="staging_customer.customer:/Customer_IM/city" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="country" expression="blocked_cust.country" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.6" xpath="staging_customer.customer:/Customer_IM/country" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="&quot;Cust-db&quot;" type="id_String" xpath="staging_customer.customer:/Customer_IM/metadata:staging_blockkey"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="metadata:staging_blockkey" expression="blocked_cust.T_GEN_KEY" type="id_String" incomingConnections="//@node.2/@nodeData/@connections.0" xpath="staging_customer.customer:/Customer_IM/metadata:staging_blockkey"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.7" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.1" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.2" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.3" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.4" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.5" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.6" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.2/@nodeData/@inputTrees.0/@nodes.0" target="//@node.2/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+    </nodeData>
+  </node>
+  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_1rbwEALLEeiq4ca-xXg-UQ - Customer_IMOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_1rbwEALLEeiq4ca-xXg-UQ - Customer_IMOut" show="false"/>
+    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="customer" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="customer"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SERVERVERSION" value="s60"/>
+    <elementParameter field="LABEL" name="NOTE" value="suggest to use 6.0 url" show="false"/>
+    <elementParameter field="TEXT" name="MDMURL" value="&quot;http://server01:8180/talendmdm/services/soap&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
+    <elementParameter field="TEXT" name="DATAMODEL" value="&quot;Cust_IM&quot;"/>
+    <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;Cust_IM&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="STAGING"/>
+    <elementParameter field="TABLE" name="RETURN_IDS"/>
+    <elementParameter field="CHECK" name="ISUPDATE" value="false"/>
+    <elementParameter field="CHECK" name="WITHREPORT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SOURCE" value="&quot;TOS&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ISINVOKE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADD_TASKID" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOM" value="true" show="false"/>
+    <elementParameter field="TEXT" name="TASKID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="RADIO" name="PREV_COLUMN" value="false" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="PREV_COLUMN_TASK_ID" value="customer" show="false"/>
+    <elementParameter field="CHECK" name="USE_PARTIAL_UPDATE" value="false"/>
+    <elementParameter field="TEXT" name="PIVOT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERWRITE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PARTIAL_DELETE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="POSITION" value="" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="false"/>
+    <elementParameter field="TEXT" name="COMMIT_LEVEL" value="200" show="false"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/Customer_IM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/firstName"/>
+      <elementValue elementRef="COLUMN" value="firstName"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/lastName"/>
+      <elementValue elementRef="COLUMN" value="lastName"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/street"/>
+      <elementValue elementRef="COLUMN" value="street"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/zip"/>
+      <elementValue elementRef="COLUMN" value="zip"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/city"/>
+      <elementValue elementRef="COLUMN" value="city"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/Customer_IM/country"/>
+      <elementValue elementRef="COLUMN" value="country"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="8"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/Customer_IM/Customer_IMId"/>
+      <elementValue elementRef="COLUMN" value="Customer_IMId"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value="" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS" show="false"/>
+    <elementParameter field="CHECK" name="REMOVE_HEADER" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Customer_IMOut"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="staging_customer" name="tMDMOutput_1">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OUTPUT" label="staging_customer" name="OUTPUT">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="staging_customer" name="REJECT">
+      <column comment="" key="false" length="-1" name="customer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="Cust_records" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tGenKey_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Cust_records" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="blocked_cust" lineStyle="0" metaname="tGenKey_1" offsetLabelX="0" offsetLabelY="0" source="tGenKey_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="blocked_cust" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="staging_customer" lineStyle="0" metaname="staging_customer" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMDMOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="staging_customer" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
