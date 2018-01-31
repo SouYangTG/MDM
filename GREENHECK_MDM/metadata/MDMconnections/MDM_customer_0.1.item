@@ -49,7 +49,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-AaWEeiKMtlpXWI9XA" label="CancelDate" talendType="id_Date"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-QaWEeiKMtlpXWI9XA" label="FederalIDNbr" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-gaWEeiKMtlpXWI9XA" label="FreightTerms" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-waWEeiKMtlpXWI9XA" label="StandardMultiplier" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM-waWEeiKMtlpXWI9XA" label="StandardMultiplier" length="-1" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM_AaWEeiKMtlpXWI9XA" label="Website" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM_QaWEeiKMtlpXWI9XA" label="Phone" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM_gaWEeiKMtlpXWI9XA" label="Fax" talendType="id_String"/>
@@ -70,7 +70,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNDQaWEeiKMtlpXWI9XA" label="CAPS_UserAuthorization" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNDgaWEeiKMtlpXWI9XA" label="CAPS_Comments" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNDwaWEeiKMtlpXWI9XA" label="MarketSegment" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEAaWEeiKMtlpXWI9XA" label="PartsMultiplier" talendType="id_BigDecimal"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEAaWEeiKMtlpXWI9XA" label="PartsMultiplier" length="-1" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEQaWEeiKMtlpXWI9XA" label="RiskCategory" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEgaWEeiKMtlpXWI9XA" label="CRMAccountID" talendType="id_String"/>
     </ownedElement>
