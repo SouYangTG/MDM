@@ -51,15 +51,15 @@
     <resultMetadata xmi:id="_-qLj6QbVEeiQYNC2pBT3dw"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_-qMK8AbVEeiQYNC2pBT3dw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_-qMK8QbVEeiQYNC2pBT3dw">
-      <builtInMatchRuleDefinition xmi:id="_-qMK8gbVEeiQYNC2pBT3dw" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="1.0">
-        <blockKeys xmi:id="_zg8wMAbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber">
-          <preAlgorithm xmi:id="_zg8wMQbWEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
-          <algorithm xmi:id="_zg8wMgbWEeiQYNC2pBT3dw" algorithmType="exact" algorithmParameters=""/>
-          <postAlgorithm xmi:id="_zg8wMwbWEeiQYNC2pBT3dw" algorithmType="useDefault" algorithmParameters="1"/>
+      <builtInMatchRuleDefinition xmi:id="_-qMK8gbVEeiQYNC2pBT3dw" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
+        <blockKeys xmi:id="_i7ZrgAbcEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber">
+          <preAlgorithm xmi:id="_i7ZrgQbcEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_i7ZrggbcEeiQYNC2pBT3dw" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_i7ZrgwbcEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
         </blockKeys>
-        <matchRules xmi:id="_-ytNwAbVEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="1.0">
+        <matchRules xmi:id="_-ytNwAbVEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="0.95">
           <matchKeys xmi:id="_E1XTwAbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
-            <algorithm xmi:id="_E1XTwQbWEeiQYNC2pBT3dw" algorithmType="EXACT" algorithmParameters=""/>
+            <algorithm xmi:id="_E1XTwQbWEeiQYNC2pBT3dw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
           </matchKeys>
         </matchRules>
         <survivorshipKeys xmi:id="_E1XTwgbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" allowManualResolution="true">
