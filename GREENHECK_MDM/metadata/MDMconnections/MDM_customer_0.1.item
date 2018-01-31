@@ -40,7 +40,7 @@
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_SqPM8AaWEeiKMtlpXWI9XA" name="Customer" dataManager="_M_6ucAaWEeiKMtlpXWI9XA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SqPM8QaWEeiKMtlpXWI9XA" id="_RQsnIAaWEeiKMtlpXWI9XA" label="AccountOut">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM8gaWEeiKMtlpXWI9XA" label="AccountId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM8gaWEeiKMtlpXWI9XA" label="AccountId" length="-1" talendType="id_Integer"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM8waWEeiKMtlpXWI9XA" label="AccountNumber" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM9AaWEeiKMtlpXWI9XA" label="AccountName" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPM9QaWEeiKMtlpXWI9XA" label="AccountName2" talendType="id_String"/>
