@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_i5DYkAbQEeiQYNC2pBT3dw" name="Chk_AccountNumber" recordLinkageAlgorithm="T_SwooshAlgorithm">
+  <taggedValue xmi:id="_i5DYkQbQEeiQYNC2pBT3dw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_i5DYkgbQEeiQYNC2pBT3dw" tag="Author" value="security@company.com"/>
+  <taggedValue xmi:id="_i5DYkwbQEeiQYNC2pBT3dw" tag="Purpose"/>
+  <taggedValue xmi:id="_i5DYlAbQEeiQYNC2pBT3dw" tag="Description"/>
+  <taggedValue xmi:id="_i5DYlQbQEeiQYNC2pBT3dw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_i5DYlgbQEeiQYNC2pBT3dw" tag="Validation_Status" value="true"/>
+</dataquality.rules:MatchRuleDefinition>
