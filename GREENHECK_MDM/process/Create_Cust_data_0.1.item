@@ -256,7 +256,7 @@
       <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="0" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="0" name="FreightTerms" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
@@ -346,7 +346,7 @@
         <mapperTableEntries name="AccountStatus" expression="row1.AccountStatus " type="id_String" nullable="true"/>
         <mapperTableEntries name="StartDate" expression="row1.StartDate " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CancelDate" expression="row1.CancelDate " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="FederalIDNbr" expression="Numeric.random(0,100) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FederalIDNbr" expression="Numeric.random(0,100) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="FreightTerms" expression="row1.FreightTerms " type="id_String" nullable="true"/>
         <mapperTableEntries name="StandardMultiplier" expression="row1.StandardMultiplier " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Website" expression="row1.Website " type="id_String" nullable="true"/>
@@ -462,7 +462,7 @@
       <column comment="" key="false" length="0" name="CancelDate" nullable="true" pattern="&quot;yyyy-mm-dd&quot;" precision="0" type="id_Date" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
-      <column comment="" key="false" length="0" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="0" name="FederalIDNbr" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true">
         <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;...&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;customize parameter&quot;,&quot;PARAMETER_VALUE&quot;:&quot;&quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;&quot;}"/>
       </column>
       <column comment="" key="false" length="0" name="FreightTerms" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true">
