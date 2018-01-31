@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_E557gQaUEeiKMtlpXWI9XA" name="Runnable_Account#StartWorkflow_Customer_Account" description="Runnable_Account#StartWorkflow_Customer_Account">
+  <processSteps xmi:id="_E557ggaUEeiKMtlpXWI9XA" pluginJNDI="amalto/local/transformer/plugin/workflowcontexttrigger" description="Invoke the workflow" parameters="&lt;parameters>&#xA;&lt;processId>Customer_Account&lt;/processId>&lt;processVersion>1.0&lt;/processVersion>&#xA;&lt;defaultDataModel>Customer&lt;/defaultDataModel>&lt;/parameters>">
+    <inputMappings xmi:id="_E557gwaUEeiKMtlpXWI9XA" pipelineVariable="_DEFAULT_" pluginVariable="update_report"/>
+    <outputMappings xmi:id="_E557hAaUEeiKMtlpXWI9XA" pipelineVariable="output" pluginVariable="execution_result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>
