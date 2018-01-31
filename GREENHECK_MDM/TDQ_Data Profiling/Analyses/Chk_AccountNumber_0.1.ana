@@ -58,7 +58,7 @@
           <postAlgorithm xmi:id="_i7ZrgwbcEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
         </blockKeys>
         <matchRules xmi:id="_-ytNwAbVEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="0.95">
-          <matchKeys xmi:id="_E1XTwAbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="1" handleNull="nullMatchNull" threshold="1.0" tokenizationType="No">
+          <matchKeys xmi:id="_E1XTwAbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
             <algorithm xmi:id="_E1XTwQbWEeiQYNC2pBT3dw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
           </matchKeys>
         </matchRules>
