@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_-qLj4AbVEeiQYNC2pBT3dw" name="Chk_AccountNumber" creationDate="2018-01-31T16:27:53.180-0600" defaultContext="Default">
+  <clientDependency href="../../metadata/fileDelimited/Account_Load_0.1.item#_-44HMAbVEeiQYNC2pBT3dw"/>
+  <taggedValue xmi:id="_-qLj4QbVEeiQYNC2pBT3dw" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_-qLj4gbVEeiQYNC2pBT3dw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_-qLj4wbVEeiQYNC2pBT3dw" tag="Author" value="security@company.com"/>
+  <taggedValue xmi:id="_-qLj5AbVEeiQYNC2pBT3dw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_-qLj5QbVEeiQYNC2pBT3dw" tag="Description" value=""/>
+  <taggedValue xmi:id="_-qLj5gbVEeiQYNC2pBT3dw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_-1IPoAbVEeiQYNC2pBT3dw" tag="TEMP_DATA_DIR" value=""/>
+  <taggedValue xmi:id="_-1IPoQbVEeiQYNC2pBT3dw" tag="MAX_BUFFER_SIZE" value="200000"/>
+  <taggedValue xmi:id="_-1IPogbVEeiQYNC2pBT3dw" tag="STORE_ON_DISK" value="false"/>
+  <taggedValue xmi:id="_-41D4QbVEeiQYNC2pBT3dw" tag="ANA_LAST_RUN_CONTEXT" value="Default"/>
+  <context xmi:id="_-qLj5wbVEeiQYNC2pBT3dw">
+    <connection href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR8AbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR8wbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR9AbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR9QbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR9gbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR9wbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR-AbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR-QbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR-gbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR-wbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR_AbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR_QbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR_gbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uR_wbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSAAbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSAQbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSAgbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSAwbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSBAbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSBQbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSBgbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSBwbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSCAbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSCQbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSCgbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSCwbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSDAbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSDQbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSDgbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSDwbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSEAbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSEQbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSEgbVEeiQYNC2pBT3dw"/>
+    <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/Account_Load_0.1.item#_41uSEwbVEeiQYNC2pBT3dw"/>
+  </context>
+  <results xmi:id="_-qLj6AbVEeiQYNC2pBT3dw">
+    <resultMetadata xmi:id="_-qLj6QbVEeiQYNC2pBT3dw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_-qMK8AbVEeiQYNC2pBT3dw"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_-qMK8QbVEeiQYNC2pBT3dw">
+      <builtInMatchRuleDefinition xmi:id="_-qMK8gbVEeiQYNC2pBT3dw" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
+        <blockKeys xmi:id="_i7ZrgAbcEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber">
+          <preAlgorithm xmi:id="_i7ZrgQbcEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
+          <algorithm xmi:id="_i7ZrggbcEeiQYNC2pBT3dw" algorithmType="first_Char_EW" algorithmParameters=""/>
+          <postAlgorithm xmi:id="_i7ZrgwbcEeiQYNC2pBT3dw" algorithmType="NON_ALGO" algorithmParameters=""/>
+        </blockKeys>
+        <matchRules xmi:id="_-ytNwAbVEeiQYNC2pBT3dw" name="Match Rule 1" matchInterval="0.95">
+          <matchKeys xmi:id="_E1XTwAbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
+            <algorithm xmi:id="_E1XTwQbWEeiQYNC2pBT3dw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
+        <survivorshipKeys xmi:id="_E1XTwgbWEeiQYNC2pBT3dw" name="AccountNumber" column="AccountNumber" allowManualResolution="true">
+          <function xmi:id="_E1XTwwbWEeiQYNC2pBT3dw" algorithmType="MostRecent" algorithmParameters=""/>
+        </survivorshipKeys>
+      </builtInMatchRuleDefinition>
+    </indicators>
+  </results>
+  <parameters xmi:id="_-qMK8wbVEeiQYNC2pBT3dw" analysisType="Match Analysis"/>
+  <contextType xmi:id="_-41D4AbVEeiQYNC2pBT3dw" confirmationNeeded="false" name="Default"/>
+</dataquality.analysis:Analysis>

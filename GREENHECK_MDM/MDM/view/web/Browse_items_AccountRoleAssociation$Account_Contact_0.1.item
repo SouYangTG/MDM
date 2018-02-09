@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_T5Dr8A2mEeigeOmFf0HhQQ" name="Browse_items_AccountRoleAssociation#Account_Contact" description="[EN:Account_Contact]" timestamp="1518191459975" digestValue="8b220f8be4bdcb058c1b074e11c1048b" lastServerName="server01" transformerPK="">
+  <searchableBusinessElements>AccountRoleAssociation/AccountRoleAssociationId</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountNumber</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountName</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountName2</searchableBusinessElements>
+  <searchableBusinessElements>Account/AccountStatus</searchableBusinessElements>
+  <searchableBusinessElements>Contact/FirstName</searchableBusinessElements>
+  <searchableBusinessElements>Contact/MiddleName</searchableBusinessElements>
+  <searchableBusinessElements>Contact/LastName</searchableBusinessElements>
+  <searchableBusinessElements>Contact/Phone</searchableBusinessElements>
+  <viewableBusinessElements>AccountRoleAssociation/AccountRoleAssociationId</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountNumber</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountName</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountName2</viewableBusinessElements>
+  <viewableBusinessElements>Account/AccountStatus</viewableBusinessElements>
+  <viewableBusinessElements>Contact/FirstName</viewableBusinessElements>
+  <viewableBusinessElements>Contact/MiddleName</viewableBusinessElements>
+  <viewableBusinessElements>Contact/LastName</viewableBusinessElements>
+  <viewableBusinessElements>Contact/Phone</viewableBusinessElements>
+  <whereConditions xmi:id="_BdQeAA2xEeigeOmFf0HhQQ" leftPath="AccountRoleAssociation/AccountId" rightValueOrPath="Account/AccountId">
+    <stringPredicate xmi:id="_BdQeAQ2xEeigeOmFf0HhQQ" value="NONE"/>
+    <operator xmi:id="_BdQeAg2xEeigeOmFf0HhQQ" value="JOIN"/>
+  </whereConditions>
+  <whereConditions xmi:id="_BdQeAw2xEeigeOmFf0HhQQ" leftPath="AccountRoleAssociation/ContactId" rightValueOrPath="Contact/ContactId">
+    <stringPredicate xmi:id="_BdQeBA2xEeigeOmFf0HhQQ" value="NONE"/>
+    <operator xmi:id="_BdQeBQ2xEeigeOmFf0HhQQ" value="JOIN"/>
+  </whereConditions>
+  <isTransformerActive xmi:id="_BdQeBg2xEeigeOmFf0HhQQ"/>
+</mdmserverobject:WSViewE>

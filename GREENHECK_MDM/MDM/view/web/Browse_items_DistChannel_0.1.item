@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_tjRHAAxLEei6kJLPDAfIbg" name="Browse_items_DistChannel" description="[EN:DistChannel]" timestamp="1518100674252" digestValue="f4dc81b19a239a232f58e9be41894946" lastServerName="server01" transformerPK="">
+  <searchableBusinessElements>DistChannel/ChannelId</searchableBusinessElements>
+  <searchableBusinessElements>DistChannel/DistChannelName</searchableBusinessElements>
+  <viewableBusinessElements>DistChannel/ChannelId</viewableBusinessElements>
+  <viewableBusinessElements>DistChannel/DistChannelName</viewableBusinessElements>
+  <isTransformerActive xmi:id="_tjRHAQxLEei6kJLPDAfIbg"/>
+</mdmserverobject:WSViewE>

@@ -1,0 +1,604 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">    
+    <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
+    <xsd:element name="Organization"> 
+    <xsd:annotation> 
+      <xsd:appinfo source="X_AutoExpand">false</xsd:appinfo>  
+      <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+    </xsd:annotation>  
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element maxOccurs="1" minOccurs="1" name="NameId" type="AUTO_INCREMENT"> 
+          <xsd:annotation> 
+             
+          <xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Website" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+      </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="Organization"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="NameId"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:element name="Account"> 
+    <xsd:annotation> 
+      <xsd:appinfo source="X_AutoExpand">false</xsd:appinfo>  
+      <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+    
+<xsd:appinfo source="X_Schematron">&lt;pattern name="Validate_LocationId" &gt;
+&lt;rule context="LocationId"&gt;&lt;assert test="fn:contains(.,Location/LocationId)"&gt;&lt;![CDATA[Id doesn't match]]&gt;&lt;/assert&gt;&lt;/rule&gt;
+&lt;/pattern&gt;
+</xsd:appinfo>
+<xsd:appinfo source="X_Schematron">&lt;pattern name="DS_test" &gt;
+&lt;rule context="AccountNumber"&gt;&lt;assert test="fn:getFalse()"&gt;&lt;![CDATA[Kicking to DSC]]&gt;&lt;/assert&gt;&lt;/rule&gt;
+&lt;/pattern&gt;
+</xsd:appinfo>
+<xsd:appinfo source="X_Schematron">&lt;pattern name="Validate_Address" &gt;
+&lt;rule context="LocationId"&gt;&lt;assert test=".=Address/LocationId"&gt;&lt;![CDATA[Location ID is invalid.]]&gt;&lt;/assert&gt;&lt;/rule&gt;
+&lt;/pattern&gt;
+</xsd:appinfo>
+</xsd:annotation>  
+    <xsd:complexType> 
+      <xsd:sequence> 
+        <xsd:element maxOccurs="1" minOccurs="1" name="AccountId" type="AUTO_INCREMENT"> 
+           
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="AccountNumber" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="AccountName" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="AccountName2" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="AccountStatus" type="Status"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="StartDate" type="xsd:date"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="CancelDate" type="xsd:dateTime"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="FederalIDNbr" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="FreightTerms" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="StandardMultiplier" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="ParentAcctID" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey">Account/nullAccountTypeAccountId</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="CRMAcctID" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>    
+                <xsd:element maxOccurs="1" minOccurs="0" name="AccountTypeId" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey">AccountType/AccountTypeId</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">AccountType/AccountTypeName</xsd:appinfo>  
+            <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="1" name="LocationId" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey">Location/LocationId</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">Location/LocationName</xsd:appinfo>  
+            <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>   
+                <xsd:element maxOccurs="1" minOccurs="0" name="Mailing_Address" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Street1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/County</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Country</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="Shipping_Address" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Street1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Country</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/County</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" name="PartnerFunctionId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">PartnerFunction/PartnerFunctionId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" name="SalesOrgId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">SalesOrg/SalesOrgId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="SalesGroupId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">SalesGroup/SalesGroupId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_Filter">SalesOffice/SalesOfficeId$$Contains$$Account/SalesOfficeId$$#</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="SalesOfficeId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">SalesOffice/SalesOfficeId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:sequence> 
+    </xsd:complexType>  
+    <xsd:unique name="Account"> 
+      <xsd:selector xpath="."/>   
+            <xsd:field xpath="AccountId"/>
+        </xsd:unique> 
+  </xsd:element>  
+  <xsd:element name="AccountType"> 
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element name="AccountTypeId" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="AccountTypeName" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+      </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="AccountType"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="AccountTypeId"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:element name="Location"> 
+    <xsd:annotation> 
+      <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+    </xsd:annotation>  
+    <xsd:complexType> 
+      <xsd:sequence> 
+        <xsd:element name="LocationId" type="AUTO_INCREMENT"> 
+          <xsd:annotation> 
+              
+             
+          <xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="LocationName" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Mailing_Address" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>  
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">Address/Street1</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">Address/County</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">Address/Country</xsd:appinfo>  
+            <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+                <xsd:element maxOccurs="1" minOccurs="0" name="Shipping_Address" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Street1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Country</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/County</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="OrganizationId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">Organization/NameId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Organization/Name</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:sequence> 
+    </xsd:complexType>  
+    <xsd:unique name="Location"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="LocationId"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:element name="Address"> 
+    <xsd:annotation> 
+      <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+    </xsd:annotation>  
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element name="AddressId" type="AUTO_INCREMENT"> 
+          <xsd:annotation> 
+             
+          <xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Street1" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Street2" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Street3" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Country" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="PostalCode" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="County" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="JurisdictionCode" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+                <xsd:element maxOccurs="1" minOccurs="0" name="LocationId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">Location/LocationId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Location/LocationName</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="Address"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="AddressId"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:simpleType name="AUTO_INCREMENT"> 
+    <xsd:restriction base="xsd:string"/> 
+  </xsd:simpleType> 
+    <xsd:element name="DistChannel">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="ChannelId" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="DistChannelName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="DistChannel">
+<xsd:selector xpath="."/>
+            <xsd:field xpath="ChannelId"/>
+        </xsd:unique>
+</xsd:element>
+    <xsd:element name="Contact">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="ContactId" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="MiddleName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Phone" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="Fax" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Email" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="Contact">
+<xsd:selector xpath="."/>
+<xsd:field xpath="ContactId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="AccountRoles">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AccountRolesId" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="RoleDescription" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="AccountRoles">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AccountRolesId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="AccountRoleAssociation">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="AccountRoleAssociationId" type="AUTO_INCREMENT">
+
+                    <xsd:annotation>
+<xsd:appinfo source="X_Visible_Rule">fn:false()</xsd:appinfo>
+</xsd:annotation>
+                </xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="RoleId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">AccountRoles/AccountRolesId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">AccountRoles/RoleDescription</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="AccountId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/AccountId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/AccountNumber</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/AccountName</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="ContactId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Contact/ContactId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Contact/FirstName</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Contact/LastName</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="AccountRoleAssociation">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AccountRoleAssociationId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="PartnerFunction">
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
+<xsd:all>
+<xsd:element name="PartnerFunctionId" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="PartnerCode" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="PartnerDesc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="PartnerNumber" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="PartnerName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="PartnerFunction">
+<xsd:selector xpath="."/>
+<xsd:field xpath="PartnerFunctionId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="SalesOrg">
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
+<xsd:all>
+<xsd:element name="SalesOrgId" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="SalesOrgName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="SalesOrgStatus" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="SalesOrg">
+<xsd:selector xpath="."/>
+<xsd:field xpath="SalesOrgId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="SalesOffice">
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
+<xsd:all>
+<xsd:element name="SalesOfficeId" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="Region" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="SalesOffice">
+<xsd:selector xpath="."/>
+<xsd:field xpath="SalesOfficeId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="SalesGroup">
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
+<xsd:all>
+<xsd:element name="SalesGroupId" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="SalesName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="SalesOfficeId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">SalesOffice/SalesOfficeId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:all>
+</xsd:complexType>
+<xsd:unique name="SalesGroup">
+<xsd:selector xpath="."/>
+<xsd:field xpath="SalesGroupId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:simpleType name="AccountStatusType">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+    <xsd:simpleType name="Status">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="Active"/>
+<xsd:enumeration value="Not Active"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>

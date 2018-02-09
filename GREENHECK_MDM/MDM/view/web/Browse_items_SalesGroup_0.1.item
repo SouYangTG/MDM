@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_gmEegQxQEei6kJLPDAfIbg" name="Browse_items_SalesGroup" description="[EN:SalesGroup]" timestamp="1518100674354" digestValue="88de0f2f8e2d1e203a02fa3920f31339" lastServerName="server01" transformerPK="">
+  <searchableBusinessElements>SalesGroup/SalesGroupId</searchableBusinessElements>
+  <searchableBusinessElements>SalesGroup/SalesName</searchableBusinessElements>
+  <viewableBusinessElements>SalesGroup/SalesGroupId</viewableBusinessElements>
+  <viewableBusinessElements>SalesGroup/SalesName</viewableBusinessElements>
+  <isTransformerActive xmi:id="_gmEeggxQEei6kJLPDAfIbg"/>
+</mdmserverobject:WSViewE>

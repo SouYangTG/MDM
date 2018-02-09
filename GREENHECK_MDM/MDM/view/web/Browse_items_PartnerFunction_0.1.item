@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_gRWLswxQEei6kJLPDAfIbg" name="Browse_items_PartnerFunction" description="[EN:PartnerFunction]" timestamp="1518100674338" digestValue="8f63303bb87e9d02d74e30ac74bf1ff6" lastServerName="server01" transformerPK="">
+  <searchableBusinessElements>PartnerFunction/PartnerFunctionId</searchableBusinessElements>
+  <searchableBusinessElements>PartnerFunction/PartnerCode</searchableBusinessElements>
+  <searchableBusinessElements>PartnerFunction/PartnerDesc</searchableBusinessElements>
+  <searchableBusinessElements>PartnerFunction/PartnerNumber</searchableBusinessElements>
+  <searchableBusinessElements>PartnerFunction/PartnerName</searchableBusinessElements>
+  <viewableBusinessElements>PartnerFunction/PartnerFunctionId</viewableBusinessElements>
+  <viewableBusinessElements>PartnerFunction/PartnerCode</viewableBusinessElements>
+  <viewableBusinessElements>PartnerFunction/PartnerDesc</viewableBusinessElements>
+  <viewableBusinessElements>PartnerFunction/PartnerNumber</viewableBusinessElements>
+  <viewableBusinessElements>PartnerFunction/PartnerName</viewableBusinessElements>
+  <isTransformerActive xmi:id="_gRWLtAxQEei6kJLPDAfIbg"/>
+</mdmserverobject:WSViewE>
