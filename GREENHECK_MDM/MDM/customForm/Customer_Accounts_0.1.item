@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSCustomFormE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_o715sBBNEeiHO6sr9fSN-w" name="Customer_Accounts" filename="Customer_Accounts_0.1.form" datamodel="Customer" entity="Account"/>
+<mdmserverobject:WSCustomFormE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_o715sBBNEeiHO6sr9fSN-w" name="Customer_Accounts" timestamp="1518478673873" digestValue="57476504bd764542d5298d5a132c3231" lastServerName="server01" filename="Customer_Accounts_0.1.form" datamodel="Customer" entity="Account"/>
