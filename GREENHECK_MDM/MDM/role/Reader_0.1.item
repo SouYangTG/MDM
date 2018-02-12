@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_x69RIBBKEeiHO6sr9fSN-w" name="Reader" description="[EN:Normal User]">
+<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_x69RIBBKEeiHO6sr9fSN-w" name="Reader" description="[EN:Normal User]" timestamp="1518477620398" digestValue="23fae217d0d616020b45c2c2dc3a4c5d" lastServerName="server01">
   <specification xmi:id="_x69RIRBKEeiHO6sr9fSN-w" objectType="Routing Engine V2"/>
   <specification xmi:id="_x69RIhBKEeiHO6sr9fSN-w" objectType="Routing Rule">
     <instance xmi:id="_x69RIxBKEeiHO6sr9fSN-w" instanceName=".*">
