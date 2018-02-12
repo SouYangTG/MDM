@@ -428,6 +428,7 @@
     <xsd:element name="AccountRoleAssociation">
 <xsd:annotation>
 <xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_Hide">Reader</xsd:appinfo>
 </xsd:annotation>
 <xsd:complexType>
 <xsd:sequence>
@@ -435,6 +436,7 @@
 
                     <xsd:annotation>
 <xsd:appinfo source="X_Visible_Rule">fn:false()</xsd:appinfo>
+<xsd:appinfo source="X_Hide">Reader</xsd:appinfo>
 </xsd:annotation>
                 </xsd:element>
 <xsd:element maxOccurs="unbounded" minOccurs="0" name="RoleId" type="xsd:string">
@@ -444,6 +446,7 @@
 <xsd:appinfo source="X_ForeignKeyInfo">AccountRoles/RoleDescription</xsd:appinfo>
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 <xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_Hide">Reader</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="unbounded" minOccurs="0" name="AccountId" type="xsd:string">
@@ -454,6 +457,7 @@
 <xsd:appinfo source="X_ForeignKeyInfo">Account/AccountName</xsd:appinfo>
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 <xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_Hide">Reader</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="unbounded" minOccurs="0" name="ContactId" type="xsd:string">
@@ -464,6 +468,7 @@
 <xsd:appinfo source="X_ForeignKeyInfo">Contact/LastName</xsd:appinfo>
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 <xsd:appinfo source="X_Write">Writer</xsd:appinfo>
+<xsd:appinfo source="X_Hide">Reader</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
