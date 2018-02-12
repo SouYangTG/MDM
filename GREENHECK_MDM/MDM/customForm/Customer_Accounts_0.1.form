@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:mdmcomp="http://org.talend/mdm/form/components" xmlns:mdmform="http://org.talend/mdm/form" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" xmlns:st="http://eclipse.org/graphiti/mm/algorithms/styles" xsi:schemaLocation="http://eclipse.org/graphiti/mm/algorithms http://eclipse.org/graphiti/mm#//algorithms http://org.talend/mdm/form/components http://org.talend/mdm/form#//components http://eclipse.org/graphiti/mm/pictograms http://eclipse.org/graphiti/mm#//pictograms http://eclipse.org/graphiti/mm/algorithms/styles http://eclipse.org/graphiti/mm#//algorithms/styles">
+  <pi:Diagram xmi:id="_o6bkcBBNEeiHO6sr9fSN-w" visible="true" gridUnit="10" diagramTypeId="mdmform" name="Customer.Account" snapToGrid="true" pictogramLinks="_o6_lIBBNEeiHO6sr9fSN-w _o7KkQRBNEeiHO6sr9fSN-w _o7LyYRBNEeiHO6sr9fSN-w _o7NnlRBNEeiHO6sr9fSN-w _o7NnlxBNEeiHO6sr9fSN-w _o7OOpRBNEeiHO6sr9fSN-w _o7OOpxBNEeiHO6sr9fSN-w _o7O1tBBNEeiHO6sr9fSN-w _o7O1thBNEeiHO6sr9fSN-w _o7PcxRBNEeiHO6sr9fSN-w _o7PcxxBNEeiHO6sr9fSN-w _o7QD1BBNEeiHO6sr9fSN-w _o7QD1hBNEeiHO6sr9fSN-w _o7Qq5RBNEeiHO6sr9fSN-w _o7Qq5xBNEeiHO6sr9fSN-w _o7RR9RBNEeiHO6sr9fSN-w _o7RR9xBNEeiHO6sr9fSN-w _o7R5BRBNEeiHO6sr9fSN-w _o7SgEBBNEeiHO6sr9fSN-w _o7SgFhBNEeiHO6sr9fSN-w _o7THIRBNEeiHO6sr9fSN-w _o7TuMBBNEeiHO6sr9fSN-w _o7TuMhBNEeiHO6sr9fSN-w _o7UVRBBNEeiHO6sr9fSN-w _o7U8UBBNEeiHO6sr9fSN-w _o7VjYBBNEeiHO6sr9fSN-w _o7VjYhBNEeiHO6sr9fSN-w _o7WKdBBNEeiHO6sr9fSN-w _o7WKdhBNEeiHO6sr9fSN-w _o7XYkRBNEeiHO6sr9fSN-w _o7XYkxBNEeiHO6sr9fSN-w _o7X_ohBNEeiHO6sr9fSN-w _o7X_pBBNEeiHO6sr9fSN-w _o7YmtRBNEeiHO6sr9fSN-w _o7YmtxBNEeiHO6sr9fSN-w _o7ZNxRBNEeiHO6sr9fSN-w _o7Z00BBNEeiHO6sr9fSN-w _o7ab4BBNEeiHO6sr9fSN-w _o7ab4hBNEeiHO6sr9fSN-w _o7bC8RBNEeiHO6sr9fSN-w _o7bC8xBNEeiHO6sr9fSN-w" version="0.11.0">
+    <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o6cykBBNEeiHO6sr9fSN-w" background="_o6dZoRBNEeiHO6sr9fSN-w" foreground="_o6dZoBBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+    <children xmi:type="pi:ContainerShape" xmi:id="_o65egBBNEeiHO6sr9fSN-w" visible="true" active="true">
+      <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o65egRBNEeiHO6sr9fSN-w" background="_o66FkBBNEeiHO6sr9fSN-w" foreground="_o65eghBNEeiHO6sr9fSN-w" lineWidth="2" transparency="0.0" width="300" height="505" x="10" y="20"/>
+      <link xmi:type="pi:PictogramLink" xmi:id="_o6_lIBBNEeiHO6sr9fSN-w" businessObjects="_o6-XABBNEeiHO6sr9fSN-w"/>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7FrwBBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7GS0BBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="5">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7LyYBBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7LyYRBNEeiHO6sr9fSN-w" businessObjects="_o7EdoBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7IvEBBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7J9MBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="AccountId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7KkQRBNEeiHO6sr9fSN-w" businessObjects="_o7EdoBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7NnkRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7NnkhBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="30">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7NnlhBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7NnlxBNEeiHO6sr9fSN-w" businessObjects="_o7NnkBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7NnkxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7NnlBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="AccountNumber"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7NnlRBNEeiHO6sr9fSN-w" businessObjects="_o7NnkBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7OOoRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7OOohBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="55">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7OOphBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7OOpxBNEeiHO6sr9fSN-w" businessObjects="_o7OOoBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7OOoxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7OOpBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="AccountName"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7OOpRBNEeiHO6sr9fSN-w" businessObjects="_o7OOoBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7O1sBBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7O1sRBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="80">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7O1tRBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7O1thBNEeiHO6sr9fSN-w" businessObjects="_o7OOqBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7O1shBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7O1sxBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="AccountName2"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7O1tBBNEeiHO6sr9fSN-w" businessObjects="_o7OOqBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7PcwRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7PcwhBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="105">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7PcxhBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.combo" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7PcxxBNEeiHO6sr9fSN-w" businessObjects="_o7PcwBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7PcwxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7PcxBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="AccountStatus"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7PcxRBNEeiHO6sr9fSN-w" businessObjects="_o7PcwBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7QD0BBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7QD0RBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="130">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7QD1RBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.date" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7QD1hBNEeiHO6sr9fSN-w" businessObjects="_o7PcyBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7QD0hBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7QD0xBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="StartDate"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7QD1BBNEeiHO6sr9fSN-w" businessObjects="_o7PcyBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7Qq4RBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7Qq4hBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="155">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7Qq5hBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7Qq5xBNEeiHO6sr9fSN-w" businessObjects="_o7Qq4BBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7Qq4xBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7Qq5BBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="CancelDate"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7Qq5RBNEeiHO6sr9fSN-w" businessObjects="_o7Qq4BBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7RR8RBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7RR8hBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="180">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7RR9hBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7RR9xBNEeiHO6sr9fSN-w" businessObjects="_o7RR8BBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7RR8xBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7RR9BBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="FederalIDNbr"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7RR9RBNEeiHO6sr9fSN-w" businessObjects="_o7RR8BBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7R5ARBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7R5AhBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="205">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7R5BhBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7SgEBBNEeiHO6sr9fSN-w" businessObjects="_o7R5ABBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7R5AxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7R5BBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="FreightTerms"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7R5BRBNEeiHO6sr9fSN-w" businessObjects="_o7R5ABBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7SgEhBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7SgExBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="230">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7THIBBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7THIRBNEeiHO6sr9fSN-w" businessObjects="_o7SgERBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7SgFBBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7SgFRBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="StandardMultiplier"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7SgFhBNEeiHO6sr9fSN-w" businessObjects="_o7SgERBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7THIxBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7THJBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="255">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7TuMRBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7TuMhBNEeiHO6sr9fSN-w" businessObjects="_o7THIhBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7THJRBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7THJhBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="ParentAcctID"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7TuMBBNEeiHO6sr9fSN-w" businessObjects="_o7THIhBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7UVQBBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7UVQRBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="280">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7UVRRBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7U8UBBNEeiHO6sr9fSN-w" businessObjects="_o7TuMxBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7UVQhBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7UVQxBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="CRMAcctID"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7UVRBBNEeiHO6sr9fSN-w" businessObjects="_o7TuMxBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7U8UhBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7U8UxBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="305">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7VjYRBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7VjYhBNEeiHO6sr9fSN-w" businessObjects="_o7U8URBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7U8VBBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7U8VRBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="AccountTypeId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7VjYBBNEeiHO6sr9fSN-w" businessObjects="_o7U8URBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7WKcBBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7WKcRBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="330">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7WKdRBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7WKdhBNEeiHO6sr9fSN-w" businessObjects="_o7VjYxBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7WKchBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7WKcxBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="LocationId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7WKdBBNEeiHO6sr9fSN-w" businessObjects="_o7VjYxBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7WxgRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7WxghBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="355">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7XYkhBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7XYkxBNEeiHO6sr9fSN-w" businessObjects="_o7WxgBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7WxgxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7XYkBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="Mailing_Address"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7XYkRBNEeiHO6sr9fSN-w" businessObjects="_o7WxgBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7XYlRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7XYlhBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="380">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7X_oxBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7X_pBBNEeiHO6sr9fSN-w" businessObjects="_o7XYlBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7X_oBBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7X_oRBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="Shipping_Address"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7X_ohBNEeiHO6sr9fSN-w" businessObjects="_o7XYlBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7YmsRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7YmshBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="405">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7YmthBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7YmtxBNEeiHO6sr9fSN-w" businessObjects="_o7YmsBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7YmsxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7YmtBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="PartnerFunctionId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7YmtRBNEeiHO6sr9fSN-w" businessObjects="_o7YmsBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7ZNwRBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7ZNwhBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="430">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7ZNxhBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7Z00BBNEeiHO6sr9fSN-w" businessObjects="_o7ZNwBBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7ZNwxBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7ZNxBBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="SalesOrgId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7ZNxRBNEeiHO6sr9fSN-w" businessObjects="_o7ZNwBBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7Z00hBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7Z00xBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="455">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7ab4RBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7ab4hBNEeiHO6sr9fSN-w" businessObjects="_o7Z00RBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7Z01BBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7Z01RBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="SalesGroupId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7ab4BBNEeiHO6sr9fSN-w" businessObjects="_o7Z00RBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+      <children xmi:type="pi:ContainerShape" xmi:id="_o7ab5BBNEeiHO6sr9fSN-w" visible="true" active="true">
+        <graphicsAlgorithm xmi:type="al:Rectangle" xmi:id="_o7ab5RBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="260" height="20" x="5" y="480">
+          <graphicsAlgorithmChildren xmi:type="al:Image" xmi:id="_o7bC8hBNEeiHO6sr9fSN-w" lineWidth="1" transparency="0.0" width="195" height="20" x="65" id="org.talend.mdm.form.editor.text" stretchH="false" stretchV="false" proportional="false"/>
+        </graphicsAlgorithm>
+        <link xmi:type="pi:PictogramLink" xmi:id="_o7bC8xBNEeiHO6sr9fSN-w" businessObjects="_o7ab4xBNEeiHO6sr9fSN-w"/>
+        <children xmi:type="pi:Shape" xmi:id="_o7ab5hBNEeiHO6sr9fSN-w" visible="true">
+          <graphicsAlgorithm xmi:type="al:Text" xmi:id="_o7bC8BBNEeiHO6sr9fSN-w" foreground="_o7KkQBBNEeiHO6sr9fSN-w" lineWidth="1" filled="false" transparency="0.0" width="65" height="20" x="2" horizontalAlignment="ALIGNMENT_CENTER" value="SalesOfficeId"/>
+          <link xmi:type="pi:PictogramLink" xmi:id="_o7bC8RBNEeiHO6sr9fSN-w" businessObjects="_o7ab4xBNEeiHO6sr9fSN-w"/>
+        </children>
+      </children>
+    </children>
+    <colors xmi:type="st:Color" xmi:id="_o6dZoBBNEeiHO6sr9fSN-w" red="227" green="238" blue="249"/>
+    <colors xmi:type="st:Color" xmi:id="_o6dZoRBNEeiHO6sr9fSN-w" red="255" green="255" blue="255"/>
+    <colors xmi:type="st:Color" xmi:id="_o65eghBNEeiHO6sr9fSN-w" red="255" green="102"/>
+    <colors xmi:type="st:Color" xmi:id="_o66FkBBNEeiHO6sr9fSN-w" red="207" green="227" blue="250"/>
+    <colors xmi:type="st:Color" xmi:id="_o7KkQBBNEeiHO6sr9fSN-w" red="51" green="51" blue="153"/>
+  </pi:Diagram>
+  <mdmform:Panel xmi:id="_o6-XABBNEeiHO6sr9fSN-w" label="" canMove="false">
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7EdoBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" minOccurs="1" maxOccurs="1" type="AUTO_INCREMENT" xpath="/Account/AccountId" label="AccountId"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7NnkBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/AccountNumber" label="AccountNumber"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7OOoBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/AccountName" label="AccountName"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7OOqBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/AccountName2" label="AccountName2"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7PcwBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="enum" xpath="/Account/AccountStatus" label="AccountStatus"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7PcyBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="date" xpath="/Account/StartDate" label="StartDate"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7Qq4BBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="dateTime" xpath="/Account/CancelDate" label="CancelDate"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7RR8BBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/FederalIDNbr" label="FederalIDNbr"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7R5ABBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/FreightTerms" label="FreightTerms"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7SgERBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/StandardMultiplier" label="StandardMultiplier"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7THIhBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/ParentAcctID" label="ParentAcctID"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7TuMxBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/CRMAcctID" label="CRMAcctID"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7U8URBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/AccountTypeId" label="AccountTypeId"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7VjYxBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" minOccurs="1" maxOccurs="1" type="string" xpath="/Account/LocationId" label="LocationId"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7WxgBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/Mailing_Address" label="Mailing_Address"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7XYlBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/Shipping_Address" label="Shipping_Address"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7YmsBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="-1" type="string" xpath="/Account/PartnerFunctionId" label="PartnerFunctionId"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7ZNwBBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="-1" type="string" xpath="/Account/SalesOrgId" label="SalesOrgId"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7Z00RBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/SalesGroupId" label="SalesGroupId"/>
+    <children xmi:type="mdmcomp:TextField" xmi:id="_o7ab4xBNEeiHO6sr9fSN-w" parent="_o6-XABBNEeiHO6sr9fSN-w" maxOccurs="1" type="string" xpath="/Account/SalesOfficeId" label="SalesOfficeId"/>
+  </mdmform:Panel>
+</xmi:XMI>
