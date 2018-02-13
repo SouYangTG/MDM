@@ -175,6 +175,8 @@
 <xsd:appinfo source="X_Write">Writer</xsd:appinfo>
 <xsd:appinfo source="X_ForeignKey">Contact/ContactId</xsd:appinfo>
 <xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Contact/FirstName</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             </xsd:sequence> 
