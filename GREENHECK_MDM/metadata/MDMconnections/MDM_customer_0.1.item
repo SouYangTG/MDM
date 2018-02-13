@@ -124,7 +124,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EddGQBDrEei9XtSMB8uFbw" label="Fax" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EddtUBDrEei9XtSMB8uFbw" label="Email" talendType="id_String"/>
     </ownedElement>
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__8LI4BDpEei9XtSMB8uFbw" id="__8JTsBDpEei9XtSMB8uFbw" label="AccountIn">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__8LI4BDpEei9XtSMB8uFbw" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="__8JTsBDpEei9XtSMB8uFbw" label="AccountIn">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__8LI4RDpEei9XtSMB8uFbw" label="AccountId" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__8LI4hDpEei9XtSMB8uFbw" label="AccountNumber" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__8LI4xDpEei9XtSMB8uFbw" label="AccountName" talendType="id_String"/>
