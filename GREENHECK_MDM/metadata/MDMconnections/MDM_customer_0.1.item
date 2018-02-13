@@ -106,7 +106,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEQaWEeiKMtlpXWI9XA" label="RiskCategory" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEgaWEeiKMtlpXWI9XA" label="CRMAccountID" talendType="id_String"/>
     </ownedElement>
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sB2IcBDpEei9XtSMB8uFbw" id="_nAuX8BDpEei9XtSMB8uFbw" label="ContactIn">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sB2IcBDpEei9XtSMB8uFbw" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_nAuX8BDpEei9XtSMB8uFbw" label="ContactIn">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EdZb4BDrEei9XtSMB8uFbw" label="ContactId" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EdaC8BDrEei9XtSMB8uFbw" label="FirstName" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EdaqABDrEei9XtSMB8uFbw" label="MiddleName" talendType="id_String"/>
