@@ -174,7 +174,7 @@
 <xsd:annotation>
 <xsd:appinfo source="X_Write">Writer</xsd:appinfo>
 <xsd:appinfo source="X_ForeignKey">Contact/ContactId</xsd:appinfo>
-<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             </xsd:sequence> 
