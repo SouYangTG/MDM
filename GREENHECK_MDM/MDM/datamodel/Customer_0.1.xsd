@@ -35,18 +35,9 @@
       <xsd:appinfo source="X_AutoExpand">false</xsd:appinfo>  
       <xsd:appinfo source="X_Write">Writer</xsd:appinfo> 
     
-<xsd:appinfo source="X_Schematron">&lt;pattern name="Validate_LocationId" &gt;
-&lt;rule context="LocationId"&gt;&lt;assert test="fn:contains(.,Location/LocationId)"&gt;&lt;![CDATA[Id doesn't match]]&gt;&lt;/assert&gt;&lt;/rule&gt;
-&lt;/pattern&gt;
-</xsd:appinfo>
-<xsd:appinfo source="X_Schematron">&lt;pattern name="DS_test" &gt;
-&lt;rule context="AccountNumber"&gt;&lt;assert test="fn:getFalse()"&gt;&lt;![CDATA[Kicking to DSC]]&gt;&lt;/assert&gt;&lt;/rule&gt;
-&lt;/pattern&gt;
-</xsd:appinfo>
-<xsd:appinfo source="X_Schematron">&lt;pattern name="Validate_Address" &gt;
-&lt;rule context="LocationId"&gt;&lt;assert test=".=Address/LocationId"&gt;&lt;![CDATA[Location ID is invalid.]]&gt;&lt;/assert&gt;&lt;/rule&gt;
-&lt;/pattern&gt;
-</xsd:appinfo>
+
+
+
 </xsd:annotation>  
     <xsd:complexType> 
       <xsd:sequence> 
