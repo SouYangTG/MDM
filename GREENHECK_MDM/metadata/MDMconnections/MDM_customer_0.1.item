@@ -46,6 +46,29 @@
       <conceptTargets xmi:id="_l8aJVRDrEei9XtSMB8uFbw" targetName="Fax" RelativeLoopExpression="Fax"/>
       <conceptTargets xmi:id="_l8aJVhDrEei9XtSMB8uFbw" targetName="Email" RelativeLoopExpression="Email"/>
     </schemas>
+    <schemas xmi:id="_jdZTwBDsEei9XtSMB8uFbw" label="AccountIn" LoopExpression="/Account" LoopLimit="50">
+      <conceptTargets xmi:id="_nQntwBDsEei9XtSMB8uFbw" targetName="AccountId" RelativeLoopExpression="AccountId"/>
+      <conceptTargets xmi:id="_nQntwRDsEei9XtSMB8uFbw" targetName="AccountNumber" RelativeLoopExpression="AccountNumber"/>
+      <conceptTargets xmi:id="_nQntwhDsEei9XtSMB8uFbw" targetName="AccountName" RelativeLoopExpression="AccountName"/>
+      <conceptTargets xmi:id="_nQntwxDsEei9XtSMB8uFbw" targetName="AccountName2" RelativeLoopExpression="AccountName2"/>
+      <conceptTargets xmi:id="_nQntxBDsEei9XtSMB8uFbw" targetName="AccountStatus" RelativeLoopExpression="AccountStatus"/>
+      <conceptTargets xmi:id="_nQntxRDsEei9XtSMB8uFbw" targetName="StartDate" RelativeLoopExpression="StartDate"/>
+      <conceptTargets xmi:id="_nQntxhDsEei9XtSMB8uFbw" targetName="CancelDate" RelativeLoopExpression="CancelDate"/>
+      <conceptTargets xmi:id="_nQntxxDsEei9XtSMB8uFbw" targetName="FederalIDNbr" RelativeLoopExpression="FederalIDNbr"/>
+      <conceptTargets xmi:id="_nQntyBDsEei9XtSMB8uFbw" targetName="FreightTerms" RelativeLoopExpression="FreightTerms"/>
+      <conceptTargets xmi:id="_nQntyRDsEei9XtSMB8uFbw" targetName="StandardMultiplier" RelativeLoopExpression="StandardMultiplier"/>
+      <conceptTargets xmi:id="_nQntyhDsEei9XtSMB8uFbw" targetName="ParentAcctID" RelativeLoopExpression="ParentAcctID"/>
+      <conceptTargets xmi:id="_nQntyxDsEei9XtSMB8uFbw" targetName="CRMAcctID" RelativeLoopExpression="CRMAcctID"/>
+      <conceptTargets xmi:id="_nQntzBDsEei9XtSMB8uFbw" targetName="AccountTypeId" RelativeLoopExpression="AccountTypeId"/>
+      <conceptTargets xmi:id="_nQntzRDsEei9XtSMB8uFbw" targetName="LocationId" RelativeLoopExpression="LocationId"/>
+      <conceptTargets xmi:id="_nQntzhDsEei9XtSMB8uFbw" targetName="Mailing_Address" RelativeLoopExpression="Mailing_Address"/>
+      <conceptTargets xmi:id="_nQntzxDsEei9XtSMB8uFbw" targetName="Shipping_Address" RelativeLoopExpression="Shipping_Address"/>
+      <conceptTargets xmi:id="_nQnt0BDsEei9XtSMB8uFbw" targetName="PartnerFunctionId" RelativeLoopExpression="PartnerFunctionId"/>
+      <conceptTargets xmi:id="_nQnt0RDsEei9XtSMB8uFbw" targetName="SalesOrgId" RelativeLoopExpression="SalesOrgId"/>
+      <conceptTargets xmi:id="_nQnt0hDsEei9XtSMB8uFbw" targetName="SalesGroupId" RelativeLoopExpression="SalesGroupId"/>
+      <conceptTargets xmi:id="_nQnt0xDsEei9XtSMB8uFbw" targetName="SalesOfficeId" RelativeLoopExpression="SalesOfficeId"/>
+      <conceptTargets xmi:id="_nQnt1BDsEei9XtSMB8uFbw" targetName="ContactId" RelativeLoopExpression="ContactId"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_SqPM8AaWEeiKMtlpXWI9XA" name="Customer" dataManager="_M_6ucAaWEeiKMtlpXWI9XA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SqPM8QaWEeiKMtlpXWI9XA" id="_RQsnIAaWEeiKMtlpXWI9XA" label="AccountOut">
@@ -91,6 +114,29 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywRDsEei9XtSMB8uFbw" label="Phone" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywhDsEei9XtSMB8uFbw" label="Fax" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywxDsEei9XtSMB8uFbw" label="Email" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_npAYkBDsEei9XtSMB8uFbw" id="_no_KcBDsEei9XtSMB8uFbw" label="AccountIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYkRDsEei9XtSMB8uFbw" label="AccountId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYkhDsEei9XtSMB8uFbw" label="AccountNumber" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYkxDsEei9XtSMB8uFbw" label="AccountName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYlBDsEei9XtSMB8uFbw" label="AccountName2" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYlRDsEei9XtSMB8uFbw" label="AccountStatus" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYlhDsEei9XtSMB8uFbw" label="StartDate" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYlxDsEei9XtSMB8uFbw" label="CancelDate" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYmBDsEei9XtSMB8uFbw" label="FederalIDNbr" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYmRDsEei9XtSMB8uFbw" label="FreightTerms" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYmhDsEei9XtSMB8uFbw" label="StandardMultiplier" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYmxDsEei9XtSMB8uFbw" label="ParentAcctID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYnBDsEei9XtSMB8uFbw" label="CRMAcctID" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYnRDsEei9XtSMB8uFbw" label="AccountTypeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYnhDsEei9XtSMB8uFbw" label="LocationId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYnxDsEei9XtSMB8uFbw" label="Mailing_Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYoBDsEei9XtSMB8uFbw" label="Shipping_Address" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYoRDsEei9XtSMB8uFbw" label="PartnerFunctionId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYohDsEei9XtSMB8uFbw" label="SalesOrgId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYoxDsEei9XtSMB8uFbw" label="SalesGroupId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYpBDsEei9XtSMB8uFbw" label="SalesOfficeId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYpRDsEei9XtSMB8uFbw" label="ContactId" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
