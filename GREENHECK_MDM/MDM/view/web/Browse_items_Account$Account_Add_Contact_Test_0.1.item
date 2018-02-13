@@ -22,9 +22,9 @@
   <viewableBusinessElements>Contact/Phone</viewableBusinessElements>
   <viewableBusinessElements>Contact/Fax</viewableBusinessElements>
   <viewableBusinessElements>Contact/Email</viewableBusinessElements>
-  <whereConditions xmi:id="_GltCoBDfEeiHO6sr9fSN-w" leftPath="Account/ContactId" rightValueOrPath="Contact/ContactId">
-    <stringPredicate xmi:id="_GltCoRDfEeiHO6sr9fSN-w" value="NONE"/>
-    <operator xmi:id="_GltCohDfEeiHO6sr9fSN-w" value="CONTAINS"/>
+  <whereConditions xmi:id="_3fUK8BDhEeiHO6sr9fSN-w" leftPath="Account/ContactId" rightValueOrPath="Contact/ContactId">
+    <stringPredicate xmi:id="_3fUK8RDhEeiHO6sr9fSN-w" value="NONE"/>
+    <operator xmi:id="_3fUK8hDhEeiHO6sr9fSN-w" value="JOIN"/>
   </whereConditions>
-  <isTransformerActive xmi:id="_GltCoxDfEeiHO6sr9fSN-w"/>
+  <isTransformerActive xmi:id="_3fUK8xDhEeiHO6sr9fSN-w"/>
 </mdmserverobject:WSViewE>
