@@ -37,6 +37,9 @@
       <root xmi:id="_RQ7QvwaWEeiKMtlpXWI9XA" XMLPath="/Account/CRMAccountID" RelatedColumn="CRMAccountID" Attribute="main" Order="34" Type="id_String"/>
       <loop xmi:id="_RQ7QwAaWEeiKMtlpXWI9XA" XMLPath="/Account/AccountId" RelatedColumn="AccountId" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_fEs8kBDpEei9XtSMB8uFbw" label="ContactIn" LoopExpression="/Contact/ContactId" LoopLimit="50">
+      <conceptTargets xmi:id="_ituRsBDpEei9XtSMB8uFbw" targetName="column" RelativeLoopExpression="ContactId"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_SqPM8AaWEeiKMtlpXWI9XA" name="Customer" dataManager="_M_6ucAaWEeiKMtlpXWI9XA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SqPM8QaWEeiKMtlpXWI9XA" id="_RQsnIAaWEeiKMtlpXWI9XA" label="AccountOut">
@@ -73,6 +76,9 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEAaWEeiKMtlpXWI9XA" label="PartsMultiplier" length="-1" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEQaWEeiKMtlpXWI9XA" label="RiskCategory" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEgaWEeiKMtlpXWI9XA" label="CRMAccountID" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sB2IcBDpEei9XtSMB8uFbw" id="_nAuX8BDpEei9XtSMB8uFbw" label="ContactIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sB2IcRDpEei9XtSMB8uFbw" label="column" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
