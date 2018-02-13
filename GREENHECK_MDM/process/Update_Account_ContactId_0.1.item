@@ -217,7 +217,7 @@
         <mapperTableEntries name="Fax" type="id_String" nullable="true"/>
         <mapperTableEntries name="Email" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row2" activateCondensedTool="true" columnNameFilter="" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="AccountRoleAssociationId" type="id_String" nullable="true"/>
         <mapperTableEntries name="RoleId" type="id_String" nullable="true"/>
         <mapperTableEntries name="AccountId" type="id_String" nullable="true"/>
