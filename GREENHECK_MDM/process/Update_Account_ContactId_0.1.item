@@ -517,7 +517,7 @@
         <mapperTableEntries name="AccountId" type="id_String" nullable="true"/>
         <mapperTableEntries name="ContactId" expression="row1.ContactId " type="id_String" nullable="true" operator="="/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row1" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ContactId" expression="row2.ContactId " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="FirstName" type="id_String" nullable="true"/>
         <mapperTableEntries name="MiddleName" type="id_String" nullable="true"/>
