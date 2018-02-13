@@ -37,7 +37,7 @@
       <root xmi:id="_RQ7QvwaWEeiKMtlpXWI9XA" XMLPath="/Account/CRMAccountID" RelatedColumn="CRMAccountID" Attribute="main" Order="34" Type="id_String"/>
       <loop xmi:id="_RQ7QwAaWEeiKMtlpXWI9XA" XMLPath="/Account/AccountId" RelatedColumn="AccountId" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
-    <schemas xmi:id="_hIMMYBDrEei9XtSMB8uFbw" label="ContactIn" LoopExpression="/Contact/ContactId" LoopLimit="50">
+    <schemas xmi:id="_hIMMYBDrEei9XtSMB8uFbw" label="ContactIn" LoopExpression="/Contact" LoopLimit="50">
       <conceptTargets xmi:id="_l8aJUBDrEei9XtSMB8uFbw" targetName="ContactId" RelativeLoopExpression="ContactId"/>
       <conceptTargets xmi:id="_l8aJURDrEei9XtSMB8uFbw" targetName="FirstName" RelativeLoopExpression="FirstName"/>
       <conceptTargets xmi:id="_l8aJUhDrEei9XtSMB8uFbw" targetName="MiddleName" RelativeLoopExpression="MiddleName"/>
@@ -84,13 +84,13 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SqPNEgaWEeiKMtlpXWI9XA" label="CRMAccountID" talendType="id_String"/>
     </ownedElement>
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sB2IcBDpEei9XtSMB8uFbw" id="_nAuX8BDpEei9XtSMB8uFbw" label="ContactIn">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHR8gBDsEei9XtSMB8uFbw" label="ContactId" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHR8gRDsEei9XtSMB8uFbw" label="FirstName" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHSjkBDsEei9XtSMB8uFbw" label="MiddleName" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHSjkRDsEei9XtSMB8uFbw" label="LastName" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHSjkhDsEei9XtSMB8uFbw" label="Phone" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHSjkxDsEei9XtSMB8uFbw" label="Fax" talendType="id_String"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SHTKoBDsEei9XtSMB8uFbw" label="Email" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedLsBDsEei9XtSMB8uFbw" label="ContactId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedLsRDsEei9XtSMB8uFbw" label="FirstName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedLshDsEei9XtSMB8uFbw" label="MiddleName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywBDsEei9XtSMB8uFbw" label="LastName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywRDsEei9XtSMB8uFbw" label="Phone" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywhDsEei9XtSMB8uFbw" label="Fax" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_cedywxDsEei9XtSMB8uFbw" label="Email" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
