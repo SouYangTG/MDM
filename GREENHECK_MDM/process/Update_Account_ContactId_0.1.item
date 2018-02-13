@@ -503,6 +503,7 @@
     <metadata connector="FLOW" name="main">
       <column comment="" key="false" length="0" name="AccountId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="0" name="ContactId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="ContactId_1" nullable="true" originalDbColumnName="ContactId" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -510,6 +511,7 @@
       <outputTables sizeState="INTERMEDIATE" name="main">
         <mapperTableEntries name="AccountId" expression="row2.AccountId " type="id_String" nullable="true"/>
         <mapperTableEntries name="ContactId" expression="row2.ContactId " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ContactId_1" expression="row1.ContactId " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" columnNameFilter="" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="AccountRoleAssociationId" type="id_String" nullable="true"/>
@@ -564,6 +566,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="main" lineStyle="0" metaname="main" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ContactId_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="main" show="false"/>
   </connection>
