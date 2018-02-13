@@ -69,6 +69,12 @@
       <conceptTargets xmi:id="_nQnt0xDsEei9XtSMB8uFbw" targetName="SalesOfficeId" RelativeLoopExpression="SalesOfficeId"/>
       <conceptTargets xmi:id="_nQnt1BDsEei9XtSMB8uFbw" targetName="ContactId" RelativeLoopExpression="ContactId"/>
     </schemas>
+    <schemas xmi:id="_IycMsBDvEei9XtSMB8uFbw" label="AccountRoleAssociationIn" LoopExpression="/AccountRoleAssociation" LoopLimit="50">
+      <conceptTargets xmi:id="_Lpc2EBDvEei9XtSMB8uFbw" targetName="AccountRoleAssociationId" RelativeLoopExpression="AccountRoleAssociationId"/>
+      <conceptTargets xmi:id="_Lpc2ERDvEei9XtSMB8uFbw" targetName="RoleId" RelativeLoopExpression="RoleId"/>
+      <conceptTargets xmi:id="_Lpc2EhDvEei9XtSMB8uFbw" targetName="AccountId" RelativeLoopExpression="AccountId"/>
+      <conceptTargets xmi:id="_Lpc2ExDvEei9XtSMB8uFbw" targetName="ContactId" RelativeLoopExpression="ContactId"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_SqPM8AaWEeiKMtlpXWI9XA" name="Customer" dataManager="_M_6ucAaWEeiKMtlpXWI9XA">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SqPM8QaWEeiKMtlpXWI9XA" id="_RQsnIAaWEeiKMtlpXWI9XA" label="AccountOut">
@@ -137,6 +143,12 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYoxDsEei9XtSMB8uFbw" label="SalesGroupId" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYpBDsEei9XtSMB8uFbw" label="SalesOfficeId" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_npAYpRDsEei9XtSMB8uFbw" label="ContactId" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_L7zKUBDvEei9XtSMB8uFbw" id="_L7yjQBDvEei9XtSMB8uFbw" label="AccountRoleAssociationIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L7zKURDvEei9XtSMB8uFbw" label="AccountRoleAssociationId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L7zKUhDvEei9XtSMB8uFbw" label="RoleId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L7zKUxDvEei9XtSMB8uFbw" label="AccountId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L7zKVBDvEei9XtSMB8uFbw" label="ContactId" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
