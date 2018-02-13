@@ -359,10 +359,7 @@
 <xsd:complexType>
 <xsd:sequence>
 <xsd:element name="ContactId" type="AUTO_INCREMENT">
-<xsd:annotation>
 
-<xsd:appinfo source="X_Hide">Writer</xsd:appinfo>
-</xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string">
 <xsd:annotation>
