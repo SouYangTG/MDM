@@ -3,7 +3,6 @@
   <searchableBusinessElements>AccountRoleAssociation/AccountRoleAssociationId</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountNumber</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountName</searchableBusinessElements>
-  <searchableBusinessElements>Account/AccountName2</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountStatus</searchableBusinessElements>
   <searchableBusinessElements>Contact/FirstName</searchableBusinessElements>
   <searchableBusinessElements>Contact/MiddleName</searchableBusinessElements>
@@ -12,19 +11,18 @@
   <viewableBusinessElements>AccountRoleAssociation/AccountRoleAssociationId</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountNumber</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountName</viewableBusinessElements>
-  <viewableBusinessElements>Account/AccountName2</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountStatus</viewableBusinessElements>
   <viewableBusinessElements>Contact/FirstName</viewableBusinessElements>
   <viewableBusinessElements>Contact/MiddleName</viewableBusinessElements>
   <viewableBusinessElements>Contact/LastName</viewableBusinessElements>
   <viewableBusinessElements>Contact/Phone</viewableBusinessElements>
-  <whereConditions xmi:id="_BdQeAA2xEeigeOmFf0HhQQ" leftPath="AccountRoleAssociation/AccountId" rightValueOrPath="Account/AccountId">
-    <stringPredicate xmi:id="_BdQeAQ2xEeigeOmFf0HhQQ" value="NONE"/>
-    <operator xmi:id="_BdQeAg2xEeigeOmFf0HhQQ" value="JOIN"/>
+  <whereConditions xmi:id="_-z6fQBG4EeiiWIYuO3UD9Q" leftPath="AccountRoleAssociation/AccountId" rightValueOrPath="Account/AccountId">
+    <stringPredicate xmi:id="_-z6fQRG4EeiiWIYuO3UD9Q" value="NONE"/>
+    <operator xmi:id="_-z6fQhG4EeiiWIYuO3UD9Q" value="JOIN"/>
   </whereConditions>
-  <whereConditions xmi:id="_BdQeAw2xEeigeOmFf0HhQQ" leftPath="AccountRoleAssociation/ContactId" rightValueOrPath="Contact/ContactId">
-    <stringPredicate xmi:id="_BdQeBA2xEeigeOmFf0HhQQ" value="NONE"/>
-    <operator xmi:id="_BdQeBQ2xEeigeOmFf0HhQQ" value="JOIN"/>
+  <whereConditions xmi:id="_-z6fQxG4EeiiWIYuO3UD9Q" leftPath="AccountRoleAssociation/ContactId" rightValueOrPath="Contact/ContactId">
+    <stringPredicate xmi:id="_-z6fRBG4EeiiWIYuO3UD9Q" value="NONE"/>
+    <operator xmi:id="_-z6fRRG4EeiiWIYuO3UD9Q" value="JOIN"/>
   </whereConditions>
-  <isTransformerActive xmi:id="_BdQeBg2xEeigeOmFf0HhQQ"/>
+  <isTransformerActive xmi:id="_-z6fRhG4EeiiWIYuO3UD9Q"/>
 </mdmserverobject:WSViewE>
