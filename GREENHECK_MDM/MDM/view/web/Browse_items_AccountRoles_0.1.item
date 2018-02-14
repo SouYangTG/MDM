@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_ewsFERGREeiiWIYuO3UD9Q" name="Browse_items_AccountRoles" description="[EN:AccountRoles]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_ewsFERGREeiiWIYuO3UD9Q" name="Browse_items_AccountRoles" description="[EN:AccountRoles]" timestamp="1518617976644" digestValue="1b85619e0055f61dc072d4a0ebaea806" lastServerName="server01" transformerPK="">
   <searchableBusinessElements>AccountRoles/AccountRolesId</searchableBusinessElements>
   <searchableBusinessElements>AccountRoles/RoleDescription</searchableBusinessElements>
   <viewableBusinessElements>AccountRoles/AccountRolesId</viewableBusinessElements>

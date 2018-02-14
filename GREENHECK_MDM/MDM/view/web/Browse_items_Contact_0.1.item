@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_ejy4kRGREeiiWIYuO3UD9Q" name="Browse_items_Contact" description="[EN:Contact]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_ejy4kRGREeiiWIYuO3UD9Q" name="Browse_items_Contact" description="[EN:Contact]" timestamp="1518617976716" digestValue="b0744c11a56d75c5545b0744753e981e" lastServerName="server01" transformerPK="">
   <searchableBusinessElements>Contact/ContactId</searchableBusinessElements>
   <searchableBusinessElements>Contact/Salutation</searchableBusinessElements>
   <searchableBusinessElements>Contact/FirstName</searchableBusinessElements>

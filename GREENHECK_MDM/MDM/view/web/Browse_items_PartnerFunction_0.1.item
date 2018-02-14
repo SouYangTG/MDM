@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_fgETkRGREeiiWIYuO3UD9Q" name="Browse_items_PartnerFunction" description="[EN:PartnerFunction]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_fgETkRGREeiiWIYuO3UD9Q" name="Browse_items_PartnerFunction" description="[EN:PartnerFunction]" timestamp="1518617976782" digestValue="8f63303bb87e9d02d74e30ac74bf1ff6" lastServerName="server01" transformerPK="">
   <searchableBusinessElements>PartnerFunction/PartnerFunctionId</searchableBusinessElements>
   <searchableBusinessElements>PartnerFunction/PartnerCode</searchableBusinessElements>
   <searchableBusinessElements>PartnerFunction/PartnerDesc</searchableBusinessElements>
