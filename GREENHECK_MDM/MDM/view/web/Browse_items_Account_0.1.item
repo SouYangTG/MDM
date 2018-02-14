@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_253OUAwcEeiqS7ALsq8tkA" name="Browse_items_Account" description="[EN:Account]" timestamp="1518100674083" digestValue="ead2fe6982657f0c0e0699e0e3a531e8" lastServerName="server01" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_fsIZoBGREeiiWIYuO3UD9Q" name="Browse_items_Account" description="[EN:Account]" transformerPK="">
   <searchableBusinessElements>Account/AccountId</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountNumber</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountName</searchableBusinessElements>
-  <searchableBusinessElements>Account/AccountName2</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountStatus</searchableBusinessElements>
+  <searchableBusinessElements>Account/StartDate</searchableBusinessElements>
   <viewableBusinessElements>Account/AccountId</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountNumber</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountName</viewableBusinessElements>
-  <viewableBusinessElements>Account/AccountName2</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountStatus</viewableBusinessElements>
-  <isTransformerActive xmi:id="_7EJxkAwpEeiqS7ALsq8tkA"/>
+  <viewableBusinessElements>Account/StartDate</viewableBusinessElements>
+  <isTransformerActive xmi:id="_fsIZoRGREeiiWIYuO3UD9Q"/>
 </mdmserverobject:WSViewE>

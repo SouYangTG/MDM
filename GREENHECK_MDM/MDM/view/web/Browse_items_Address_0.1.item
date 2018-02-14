@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_mGGrkAt_EeiSpI-W2ed3iA" name="Browse_items_Address" description="[EN:Address]" timestamp="1518100674194" digestValue="9f6e082d73ac4f47db6ed947a730f83c" lastServerName="server01" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_fIPCYBGREeiiWIYuO3UD9Q" name="Browse_items_Address" description="[EN:Address]" transformerPK="">
   <searchableBusinessElements>Address/AddressId</searchableBusinessElements>
   <searchableBusinessElements>Address/Street1</searchableBusinessElements>
   <searchableBusinessElements>Address/Street2</searchableBusinessElements>
   <searchableBusinessElements>Address/Street3</searchableBusinessElements>
-  <searchableBusinessElements>Address/Country</searchableBusinessElements>
+  <searchableBusinessElements>Address/Street4</searchableBusinessElements>
   <viewableBusinessElements>Address/AddressId</viewableBusinessElements>
   <viewableBusinessElements>Address/Street1</viewableBusinessElements>
   <viewableBusinessElements>Address/Street2</viewableBusinessElements>
   <viewableBusinessElements>Address/Street3</viewableBusinessElements>
-  <viewableBusinessElements>Address/Country</viewableBusinessElements>
-  <isTransformerActive xmi:id="_mGGrkQt_EeiSpI-W2ed3iA"/>
+  <viewableBusinessElements>Address/Street4</viewableBusinessElements>
+  <isTransformerActive xmi:id="_fIPCYRGREeiiWIYuO3UD9Q"/>
 </mdmserverobject:WSViewE>

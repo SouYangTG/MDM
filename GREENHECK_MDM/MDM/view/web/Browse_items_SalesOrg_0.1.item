@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_gc9l0QxQEei6kJLPDAfIbg" name="Browse_items_SalesOrg" description="[EN:SalesOrg]" timestamp="1518100674410" digestValue="8ffda38d9dd82debf2a321241c69dc5e" lastServerName="server01" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_gb5CoBGREeiiWIYuO3UD9Q" name="Browse_items_SalesOrg" description="[EN:SalesOrg]" transformerPK="">
   <searchableBusinessElements>SalesOrg/SalesOrgId</searchableBusinessElements>
   <searchableBusinessElements>SalesOrg/SalesOrgName</searchableBusinessElements>
   <searchableBusinessElements>SalesOrg/SalesOrgStatus</searchableBusinessElements>
   <viewableBusinessElements>SalesOrg/SalesOrgId</viewableBusinessElements>
   <viewableBusinessElements>SalesOrg/SalesOrgName</viewableBusinessElements>
   <viewableBusinessElements>SalesOrg/SalesOrgStatus</viewableBusinessElements>
-  <isTransformerActive xmi:id="_gc9l0gxQEei6kJLPDAfIbg"/>
+  <isTransformerActive xmi:id="_gb5CoRGREeiiWIYuO3UD9Q"/>
 </mdmserverobject:WSViewE>

@@ -71,6 +71,18 @@
     <instance xmi:id="_gbeYEAxQEei6kJLPDAfIbg" instanceName="Browse_items_SalesOffice" writable="true"/>
     <instance xmi:id="_gk4LsAxQEei6kJLPDAfIbg" instanceName="Browse_items_SalesOrg" writable="true"/>
     <instance xmi:id="_gqOlwAxQEei6kJLPDAfIbg" instanceName="Browse_items_SalesGroup" writable="true"/>
+    <instance xmi:id="_emiqkBGREeiiWIYuO3UD9Q" instanceName="Browse_items_Contact" writable="true"/>
+    <instance xmi:id="_ezao8BGREeiiWIYuO3UD9Q" instanceName="Browse_items_AccountRoles" writable="true"/>
+    <instance xmi:id="_e_U-ABGREeiiWIYuO3UD9Q" instanceName="Browse_items_AccountType" writable="true"/>
+    <instance xmi:id="_fKwx8BGREeiiWIYuO3UD9Q" instanceName="Browse_items_Address" writable="true"/>
+    <instance xmi:id="_fXveABGREeiiWIYuO3UD9Q" instanceName="Browse_items_SalesGroup" writable="true"/>
+    <instance xmi:id="_fizegBGREeiiWIYuO3UD9Q" instanceName="Browse_items_PartnerFunction" writable="true"/>
+    <instance xmi:id="_fuvBsBGREeiiWIYuO3UD9Q" instanceName="Browse_items_Account" writable="true"/>
+    <instance xmi:id="_f6vdYBGREeiiWIYuO3UD9Q" instanceName="Browse_items_SalesOffice" writable="true"/>
+    <instance xmi:id="_gGidsBGREeiiWIYuO3UD9Q" instanceName="Browse_items_Organization" writable="true"/>
+    <instance xmi:id="_gSgdIBGREeiiWIYuO3UD9Q" instanceName="Browse_items_Location" writable="true"/>
+    <instance xmi:id="_gp63kBGREeiiWIYuO3UD9Q" instanceName="Browse_items_DistChannel" writable="true"/>
+    <instance xmi:id="_g7beUBGREeiiWIYuO3UD9Q" instanceName="Browse_items_AccountRoleAssociation" writable="true"/>
   </specification>
   <specification xmi:id="_mmEevQt3Eeir6NDiAIpDDQ" objectType="Routing Rule">
     <instance xmi:id="_mmEevgt3Eeir6NDiAIpDDQ" instanceName=".*">

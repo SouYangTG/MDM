@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_z03MgQt9EeiSpI-W2ed3iA" name="Browse_items_AccountType" description="[EN:AccountType]" timestamp="1518100674159" digestValue="2a371b7b80addfaaf370600ba16c83fd" lastServerName="server01" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_e8eeUBGREeiiWIYuO3UD9Q" name="Browse_items_AccountType" description="[EN:AccountType]" transformerPK="">
   <searchableBusinessElements>AccountType/AccountTypeId</searchableBusinessElements>
   <searchableBusinessElements>AccountType/AccountTypeName</searchableBusinessElements>
   <viewableBusinessElements>AccountType/AccountTypeId</viewableBusinessElements>
   <viewableBusinessElements>AccountType/AccountTypeName</viewableBusinessElements>
-  <isTransformerActive xmi:id="_z03Mggt9EeiSpI-W2ed3iA"/>
+  <isTransformerActive xmi:id="_e8eeURGREeiiWIYuO3UD9Q"/>
 </mdmserverobject:WSViewE>
