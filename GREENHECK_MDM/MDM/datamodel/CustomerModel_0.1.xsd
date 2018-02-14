@@ -1,0 +1,1154 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
+    <xsd:element name="Account">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="Id" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="AccountId" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Trademark" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Trademark/Code</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_ForeignKeyInfo">Trademark/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="1" name="DistrChannel" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">DistrChan/Code</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_ForeignKeyInfo">DistrChan/Code</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">DistrChan/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="1" name="Region" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Region/Code</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_ForeignKeyInfo">Region/Code</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Region/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="MainAccount" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/Id</xsd:appinfo>
+
+
+
+
+
+
+
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/AccountId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/Name</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Address" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_ForeignKeyInfo">Address/AddressLine1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/City</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="NewAddress" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/AddressType</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/AddressLine1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/City</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/PostalCode</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Visible_Rule">/Account/Status = "Approved"</xsd:appinfo>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="1" name="Status" type="Status">
+<xsd:annotation>
+
+
+
+
+
+<xsd:appinfo source="X_Label_EN">Record Status</xsd:appinfo>
+<xsd:appinfo source="X_Default_Value_Rule">"Created"</xsd:appinfo>
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Visible_Rule">fn:false()</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="Account">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Id"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Address">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AddressId" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+
+
+<xsd:appinfo source="X_Default_Value_Rule">java.util.UUID.randomUUID().toString()</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="AddressType" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">AddressType/Code</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">AddressType/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="AddressLine1" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine2" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine3" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine4" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine5" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="City" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="State" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">State/Code</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">State/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_Filter">State/Country$$=$$Address/Country$$#</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="County" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Country" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Country/Code</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Country/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_Filter">Country/Code$$=$$Address/State.Country$$#</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="PostalCode" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Write">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Address">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AddressId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="AddressType">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_LogicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_PhysicalDelete">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="AddressType">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Contact">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="Id" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="MiddleName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Email" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="CellPhone" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="AccountRole" type="AccountRole">
+<xsd:annotation>
+<xsd:appinfo source="X_AutoExpand">true</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="Contact">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Id"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Country">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_LogicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_PhysicalDelete">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Country</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Description</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Country">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Customer">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="Id" type="AUTO_INCREMENT">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="CustomerId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Address" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/AddressLine1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/City</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/State</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/PostalCode</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="RelatedAccounts" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/Id</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/AccountId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/Name</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="1" name="Status" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="Customer">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Id"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="DistrChan">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_LogicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_PhysicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="Region" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Region/Code</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserUpdate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUserCreate</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Region/Code</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Region/Desc</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="DistrChan">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Region">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_LogicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_PhysicalDelete">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Region</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Description</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="Region">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Role">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Role">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="State">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_LogicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_PhysicalDelete">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Country" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Country/Code</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="State">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Trademark">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_LogicalDelete">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Deny_PhysicalDelete">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Trademark</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Description</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Trademark">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+<xsd:simpleType name="AUTO_INCREMENT">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+<xsd:complexType name="AccountRole">
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Account" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/Id</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/AccountId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/Name</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="Role" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Role/Code</xsd:appinfo>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Role/Code</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Role/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CusotmerUser</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:simpleType name="Status">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="Created"/>
+<xsd:enumeration value="InProcess"/>
+<xsd:enumeration value="Approved"/>
+<xsd:enumeration value="Rejected"/>
+</xsd:restriction>
+</xsd:simpleType>
+    <xsd:element name="Account_Xref">
+<xsd:annotation>
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Id" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Account" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Account/Id</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/AccountId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/Name</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Account/Trademark</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Source" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">SourceSystem/Code</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">SourceSystem/Desc</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="SourceId" type="xsd:string">
+<xsd:annotation>
+
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Account_Xref">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Id"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="SourceSystem">
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="Code" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Desc" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="SourceSystem">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Code"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="Account_Match">
+<xsd:annotation>
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="1" minOccurs="1" name="Id" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="AccountId" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Trademark" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="DistrChannel" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Region" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="MainAccount" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Address" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Address_Match/AddressId</xsd:appinfo>
+
+
+
+
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address_Match/AddressLine1</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address_Match/City</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Status" type="Status">
+<xsd:annotation>
+<xsd:appinfo source="X_Visible_Rule">fn:false()</xsd:appinfo>
+
+
+
+
+
+<xsd:appinfo source="X_Label_EN">Record Status</xsd:appinfo>
+<xsd:appinfo source="X_Default_Value_Rule">"Created"</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="MasterId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:sequence>
+</xsd:complexType>
+<xsd:unique name="Account_Match">
+<xsd:selector xpath="."/>
+<xsd:field xpath="Id"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:element name="Address_Match">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AddressId" type="AUTO_INCREMENT">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Default_Value_Rule">java.util.UUID.randomUUID().toString()</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="AddressType" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">AddressType/Code</xsd:appinfo>
+
+
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">AddressType/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="AddressLine1" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine2" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine3" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine4" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="AddressLine5" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="City" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="State" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">State/Code</xsd:appinfo>
+
+
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">State/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_Filter">State/Country$$=$$Address/Country$$#</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="County" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Country" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Country/Code</xsd:appinfo>
+
+
+
+
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Country/Desc</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_Filter">Country/Code$$=$$Address/State.Country$$#</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="PostalCode" type="xsd:string">
+<xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="0" name="MasterId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Deny_Create">CustomerAdmin</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            </xsd:all>
+</xsd:complexType>
+<xsd:unique name="Address_Match">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AddressId"/>
+</xsd:unique>
+</xsd:element>
+</xsd:schema>
