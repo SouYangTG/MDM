@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <matchrule:MatchRuleMapInfo xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:matchrule="http://www.talend.org/mdm/server/matchrule" modelName="Customer">
-  <entityMapInfos entityName="Account" matchRuleDefName="Chk_AccountNumber_Match">
-    <survivorshipKeyMap key="AccountNumber" value="Account/AccountNumber"/>
+  <entityMapInfos entityName="Account">
     <blockingKeyDefinition/>
-    <matchRuleMapInfoPages name="Match Rule 1">
-      <matchKeyMap key="AccountNumber" value="Account/AccountNumber"/>
-    </matchRuleMapInfoPages>
+    <matchRuleMapInfoPages/>
   </entityMapInfos>
 </matchrule:MatchRuleMapInfo>
