@@ -3,7 +3,6 @@
   <searchableBusinessElements>Account/AccountId</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountNumber</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountName</searchableBusinessElements>
-  <searchableBusinessElements>Account/AccountName2</searchableBusinessElements>
   <searchableBusinessElements>Account/AccountStatus</searchableBusinessElements>
   <searchableBusinessElements>Contact/FirstName</searchableBusinessElements>
   <searchableBusinessElements>Contact/MiddleName</searchableBusinessElements>
@@ -14,7 +13,6 @@
   <viewableBusinessElements>Account/AccountId</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountNumber</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountName</viewableBusinessElements>
-  <viewableBusinessElements>Account/AccountName2</viewableBusinessElements>
   <viewableBusinessElements>Account/AccountStatus</viewableBusinessElements>
   <viewableBusinessElements>Contact/FirstName</viewableBusinessElements>
   <viewableBusinessElements>Contact/MiddleName</viewableBusinessElements>
@@ -22,9 +20,9 @@
   <viewableBusinessElements>Contact/Phone</viewableBusinessElements>
   <viewableBusinessElements>Contact/Fax</viewableBusinessElements>
   <viewableBusinessElements>Contact/Email</viewableBusinessElements>
-  <whereConditions xmi:id="_3fUK8BDhEeiHO6sr9fSN-w" leftPath="Account/ContactId" rightValueOrPath="Contact/ContactId">
-    <stringPredicate xmi:id="_3fUK8RDhEeiHO6sr9fSN-w" value="NONE"/>
-    <operator xmi:id="_3fUK8hDhEeiHO6sr9fSN-w" value="JOIN"/>
+  <whereConditions xmi:id="_K63UsBGSEeiiWIYuO3UD9Q" leftPath="Account/ContactId" rightValueOrPath="Contact/ContactId">
+    <stringPredicate xmi:id="_K63UsRGSEeiiWIYuO3UD9Q" value="NONE"/>
+    <operator xmi:id="_K63UshGSEeiiWIYuO3UD9Q" value="JOIN"/>
   </whereConditions>
-  <isTransformerActive xmi:id="_3fUK8xDhEeiHO6sr9fSN-w"/>
+  <isTransformerActive xmi:id="_K63UsxGSEeiiWIYuO3UD9Q"/>
 </mdmserverobject:WSViewE>
