@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_PkZVcRJfEeiiWIYuO3UD9Q" name="Smart_view_Account#Smart_view_Account" description="Smart_view_Account#Smart_view_Account template process">
+  <processSteps xmi:id="_PkZVchJfEeiiWIYuO3UD9Q" pluginJNDI="amalto/local/transformer/plugin/xslt" description="Stylesheet" parameters="&lt;xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>&#xA;   &lt;xsl:output method='html' indent='yes' omit-xml-declaration='yes'/>&#xA;   &lt;xsl:template match='/'>&#xA;       &lt;html>&#xA;          &lt;head>&lt;title>Smart View&lt;/title>&lt;/head>&#xA;          &lt;body>&#xA;            &lt;h1>This is the default Smart View for: &lt;xsl:value-of select='./text()'/>&lt;/h1>&#xA;            &lt;xsl:copy-of select='.'/>&#xA;            &lt;!-- Customize the stylesheet -->&#xA;          &lt;/body>&#xA;       &lt;/html>&#xA;    &lt;/xsl:template>&lt;/xsl:stylesheet>">
+    <inputMappings xmi:id="_PkZVcxJfEeiiWIYuO3UD9Q" pipelineVariable="_DEFAULT_" pluginVariable="xml"/>
+    <outputMappings xmi:id="_PkZVdBJfEeiiWIYuO3UD9Q" pipelineVariable="html" pluginVariable="text"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>
