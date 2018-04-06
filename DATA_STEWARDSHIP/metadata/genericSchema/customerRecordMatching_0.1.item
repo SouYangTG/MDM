@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_vWcPQDgFEeis_-nxb1FGig" comment="connectionComment" label="connectionLabel" dataPackage="_vWc2UDgFEeis_-nxb1FGig"/>
+  <TalendMetadata:GenericPackage xmi:id="_vWc2UDgFEeis_-nxb1FGig" dataManager="_vWcPQDgFEeis_-nxb1FGig">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_vWc2UTgFEeis_-nxb1FGig" id="_ILRa0DgGEeis_-nxb1FGig" label="customerRecordMatching">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWc2UjgFEeis_-nxb1FGig" name="id" id="3995" label="id" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu0DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu0TgFEeis_-nxb1FGig" name="firstName" id="3996" label="firstName" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu0jgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_FWgdADjeEeithMhLMMNdcw" name="firstNameSynonym" label="firstNameSynonym" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu0zgFEeis_-nxb1FGig" name="lastName" id="3997" label="lastName" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu1DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu1TgFEeis_-nxb1FGig" name="address" id="3998" label="address" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu1jgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu1zgFEeis_-nxb1FGig" name="city" id="3999" label="city" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu2DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu2TgFEeis_-nxb1FGig" name="state" id="4000" label="state" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu2jgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu2zgFEeis_-nxb1FGig" name="zip" id="4001" label="zip" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu3DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu3TgFEeis_-nxb1FGig" name="phone" id="4002" label="phone" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu3jgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu3zgFEeis_-nxb1FGig" name="email" id="4003" label="email" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_vWhu4DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu4TgFEeis_-nxb1FGig" name="dateOfBirth" id="4004" label="dateOfBirth" length="10" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_vWhu4jgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu4zgFEeis_-nxb1FGig" name="source" id="4005" label="source" length="255" talendType="id_String">
+        <initialValue xmi:id="_vWhu5DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu5TgFEeis_-nxb1FGig" name="sourceRank" id="4006" label="sourceRank" length="-1" talendType="id_Integer">
+        <initialValue xmi:id="_vWhu5jgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LFVzsDgQEeiSqq_wiAEFkw" name="GID" label="GID" length="255" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu5zgFEeis_-nxb1FGig" name="MATCHING_DISTANCES" id="3937" label="MATCHING_DISTANCES" length="255" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_vWhu6DgFEeis_-nxb1FGig"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vWhu6TgFEeis_-nxb1FGig" name="MATCHING_WEIGHT" id="3938" label="MATCHING_WEIGHT" length="20" sourceType="" talendType="id_Double">
+        <initialValue xmi:id="_vWhu6jgFEeis_-nxb1FGig" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
